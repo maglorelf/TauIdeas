@@ -9,6 +9,11 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
 
   return (
+    <Layout location={location} title={siteTitle}>
+    <Seo
+      title={post.frontmatter.title}
+      description={post.frontmatter.description || post.excerpt}
+    />
     <section className="section section--gradient">
       <div className="container">
         <div className="columns">
@@ -23,6 +28,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
         </div>
       </div>
     </section>
+    </Layout>
   );
 };
 
