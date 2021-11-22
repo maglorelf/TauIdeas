@@ -28,11 +28,11 @@ const Footer = class extends React.Component {
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/about">
+                      <Link className="navbar-item" to="/legal/about">
                         About
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link className="navbar-item" to="/products">
                         Products
                       </Link>
@@ -41,8 +41,8 @@ const Footer = class extends React.Component {
                       <Link className="navbar-item" to="/contact/examples">
                         Form Examples
                       </Link>
-                    </li>
-                    <li>
+                    </li> */}
+                    {/* <li>
                       <a
                         className="navbar-item"
                         href="/admin/"
@@ -51,21 +51,36 @@ const Footer = class extends React.Component {
                       >
                         Admin
                       </a>
-                    </li>
+                    </li> */}
                   </ul>
                 </section>
               </div>
               <div className="column is-4">
                 <section>
                   <ul className="menu-list">
-                    <li>
+                    {/* <li>
                       <Link className="navbar-item" to="/blog">
                         Latest Stories
                       </Link>
-                    </li>
-                    <li>
+                    </li> */}
+                    {/* <li>
                       <Link className="navbar-item" to="/contact">
                         Contact
+                      </Link>
+                    </li> */}
+                    <li>
+                      <Link className="navbar-item" to="/legal/cookie_policy">
+                        Cookie policy
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="navbar-item" to="/legal/terms_of_use">
+                        Terms of use
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="navbar-item" to="/legal/privacy_policy">
+                        Privacy policy
                       </Link>
                     </li>
                   </ul>
@@ -94,7 +109,7 @@ const Footer = class extends React.Component {
             </div>
            <div>
            <div className="content has-text-left">
-        © {new Date().getFullYear()}, Marcos J. Martínez Ramos
+        © {new Date().getFullYear()},Tauideas by Marcos J. Martínez Ramos
         {` `}
         
            </div>
