@@ -40,9 +40,14 @@ const Layout = ({ location, title, children }) => {
           enableDeclineButton="true"
           onAccept={(byScroll) => { initializeAndTrack(location); }}
           cookieName="gatsby-gdpr-google-analytics" 
-          overlay>
-This site uses cookies ...
-</CookieConsent>
+          overlay="true">
+This site (TauIdeas.tech) uses cookies to provide necessary website functionality, improve your experience and analyze our traffic. 
+By using our website, you agree to our <Link to="/legal/privacy_policy">
+        Privacy policy
+      </Link> and our <Link to="/legal/cookie_policy">
+        Cookies policy
+      </Link>.            
+      </CookieConsent>
    <Footer />
     </div>
   )

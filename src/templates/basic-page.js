@@ -38,7 +38,7 @@ BasicPageTemplate.propTypes = {
   contentComponent: PropTypes.func,
 };
 
-const AboutPage = ({ data }) => {
+const BasicPage = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
