@@ -3,6 +3,7 @@ templateKey: 'basic-page'
 path: /legal/privacy_policy
 title: Private policy
 ---
+Last updated: November 25, 2021
 ### Personal data
 Currently we don't collect any personal data from this site (names, emails).
 In case of you send us an email, we use the information that you provide to attend your requirements. This information are stored in the email engine. 

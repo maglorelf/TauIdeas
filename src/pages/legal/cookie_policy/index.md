@@ -3,6 +3,7 @@ templateKey: 'basic-page'
 path: /legal/cookie_policy
 title: Cookie policy
 ---
+Last updated: November 25, 2021
 ### Introduction
 As any web page we need the use of cookies to store basic information to provide necessary website functionality. 
 ### Cookies used
