@@ -25,8 +25,8 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="Main page" />  
       
-      <div class="columns">
-        <div class="column  is-three-quarters">
+      <div className="columns">
+        <div className="column  is-three-quarters">
           <ol style={{ listStyle: `none` }}>
             {posts.map(post => {
               const title = post.frontmatter.title || post.fields.slug
@@ -61,7 +61,7 @@ const BlogIndex = ({ data, location }) => {
             }
           </ol>
         </div>  
-        <div class="column column50hv">     
+        <div className="column column50hv">     
         </div>  
       </div>  
      

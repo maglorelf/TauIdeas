@@ -33,7 +33,7 @@ const Layout = ({ location, title, children }) => {
         <header className="global-header">           
         <Navbar />
       </header>
-     <div class="fullpage">
+     <div className="fullpage">
       
       <main>{children}</main>
       <CookieConsent

@@ -60,6 +60,7 @@
   --color-heading: #1a202c;
   --color-heading-black: black;
   --color-accent: #d1dce5;
+
 }
 
 /* HTML elements */
@@ -84,7 +85,7 @@ body {
 
 }
 
-footer {
+.footer {
   padding: var(--spacing-6) var(--spacing-0);
 }
 
@@ -266,9 +267,7 @@ a:focus {
 .column50hv{
  min-height: 50vh;
 }
-footer {
-  margin-top: auto;
-}
+
 .post-list-item {
   margin-bottom: var(--spacing-8);
   margin-top: var(--spacing-8);
@@ -412,10 +411,6 @@ footer {
 
 .navbar-brand .navbar-item.logo {
   padding: 0 1rem; }
-
-footer.footer {
-  padding: 3rem 0rem 0rem;
-  background-color: transparent; }
 
 .menu-label {
   font-size: 1em !important;

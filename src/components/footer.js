@@ -8,85 +8,53 @@ import linkedin from "../images/social/linkedin.svg";
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="footer has-background-black has-text-white-ter">
-        <div className="content has-text-centered">
-          <img
+      <footer className="footer has-background-primary-light has-text-link">
+        <div className="content has-text-left ">
+          <img className="ml-3"
             src={logo}
             alt="Tauideas"
             style={{  }}
           />
         </div>
-        <div className="content has-text-centered has-background-black has-text-white-ter">
-          <div className="container has-background-black has-text-white-ter">
+        <div className="content has-text-left has-background-primary-light has-text-link ml-3">
+         
             <div style={{ maxWidth: "100vw" }} className="columns">
-              <div className="column is-4">
-                <section className="menu">
-                  <ul className="menu-list">
-                    <li>
-                      <Link to="/" className="navbar-item">
+              <div className="column is-one-third">
+                <section >
+                 <p className="mb-0">
+
+                      <Link to="/" >
                         Home
                       </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/legal/about">
+                 </p>
+                   <p className="mb-0">
+
+                      <Link to="/legal/about">
                         About
                       </Link>
-                    </li>
-                    {/* <li>
-                      <Link className="navbar-item" to="/products">
-                        Products
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/contact/examples">
-                        Form Examples
-                      </Link>
-                    </li> */}
-                    {/* <li>
-                      <a
-                        className="navbar-item"
-                        href="/admin/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Admin
-                      </a>
-                    </li> */}
-                  </ul>
+                   </p>                   
                 </section>
               </div>
-              <div className="column is-4">
+              <div className="column is-one-third">
                 <section>
-                  <ul className="menu-list">
-                    {/* <li>
-                      <Link className="navbar-item" to="/blog">
-                        Latest Stories
-                      </Link>
-                    </li> */}
-                    {/* <li>
-                      <Link className="navbar-item" to="/contact">
-                        Contact
-                      </Link>
-                    </li> */}
-                    <li>
-                      <Link className="navbar-item" to="/legal/cookie_policy">
+                <p className="mb-0">  
+                      <Link to="/legal/cookie_policy">
                         Cookie policy
                       </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/legal/terms_of_use">
+                      </p>
+                   <p className="mb-0">
+                      <Link to="/legal/terms_of_use">
                         Terms of use
                       </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/legal/privacy_policy">
+                      </p>
+                   <p className="mb-0">
+                      <Link to="/legal/privacy_policy">
                         Privacy policy
                       </Link>
-                    </li>
-                  </ul>
+                      </p>                                
                 </section>
               </div>
-              <div className="column is-4 social">
+              <div className="column is-one-third social">
               
                 <a title="twitter" href="https://twitter.com">
                   <img
@@ -107,14 +75,14 @@ const Footer = class extends React.Component {
                
               </div>
             </div>
-           <div>
-           <div className="content has-text-left">
-        © {new Date().getFullYear()},Tauideas by Marcos J. Martínez Ramos
+         
+           <div className="content has-text-left has-text-primary"><p className="mb-0">
+        © {new Date().getFullYear()}, Tauideas by Marcos J. Martínez Ramos
         {` `}
-        
+        </p>
+          
            </div>
-           </div>
-          </div>
+         
         </div>
       </footer>
     );
