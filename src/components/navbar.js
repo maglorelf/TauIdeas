@@ -40,9 +40,16 @@ const Navbar = class extends React.Component {
       >
         <div className="container">
           <div className="navbar-brand">        
+            <Link to="/">
+            <img
+            src={logo}
+            alt="Tauideas"
+            style={{  }} />
+            </Link>
+            </div>
+
             {/* Hamburger menu */}
-            <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
+            <div className={`navbar-burger burger ${this.state.navBarActiveClass}`}
               data-target="navMenu"
               role="menuitem"
               tabIndex={0}
@@ -54,20 +61,18 @@ const Navbar = class extends React.Component {
               <span />
             </div>
           </div>
-          <div
-            id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
-          >
+          <div id="navMenu" className={`navbar-menu ${this.state.navBarActiveClass}`} >
             <div className="navbar-start has-text-centered">
               {/* <Link className="navbar-item" to="/about">
                 About
-              </Link>
-              <Link className="navbar-item" to="/products">
-                Products
-              </Link> */}
+                </Link>*/
+              }
               <Link className="navbar-item" to="/blog">
                 Blog
               </Link>
+              <Link className="navbar-item" to="/projects">
+                Projects
+              </Link> 
               {/* <Link className="navbar-item" to="/contact">
                 Contact
               </Link>
@@ -87,8 +92,7 @@ const Navbar = class extends React.Component {
                 </span>
               </a>
             </div>
-          </div>
-        </div>
+          </div>        
       </nav>
     );
   }

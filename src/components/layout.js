@@ -29,8 +29,9 @@ const Layout = ({ location, title, children }) => {
 
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
-      <header className="global-header">{header}</header>
-<Navbar />
+      <header className="global-header">           
+        <Navbar />
+      </header>
       <main>{children}</main>
       <CookieConsent
           location="bottom"
