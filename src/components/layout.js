@@ -28,10 +28,13 @@ const Layout = ({ location, title, children }) => {
   }
 
   return (
-    <div className="global-wrapper" data-is-root-path={isRootPath}>
-      <header className="global-header">           
+    <div className="global-wrapper fullpage" data-is-root-path={isRootPath}>
+       
+        <header className="global-header">           
         <Navbar />
       </header>
+     <div class="fullpage">
+      
       <main>{children}</main>
       <CookieConsent
           location="bottom"
@@ -50,7 +53,7 @@ By using our website, you agree to our <Link to="/legal/privacy_policy">
       </Link>.            
       </CookieConsent>
    <Footer />
-    </div>
+    </div></div>
   )
 }
 
