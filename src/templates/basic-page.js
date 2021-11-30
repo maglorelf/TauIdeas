@@ -2,11 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
-import Content, { HTMLContent } from "../components/Content";
+import Seo from "../components/seo";
 
 // eslint-disable-next-line
-export const BasicPageTemplate = ({ title, content, contentComponent }) => {
-  const PageContent = contentComponent || Content;
+export const BasicPageTemplate = ({  data, location  }) => {
+  const post = data.markdownRemark    
+  const siteTitle = data.site.siteMetadata?.title || `Title`
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -20,9 +21,9 @@ export const BasicPageTemplate = ({ title, content, contentComponent }) => {
           <div className="column is-10 is-offset-1">
             <div className="section">
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
+                {siteTitle}
               </h2>
-              <PageContent className="content" content={content} />
+             
             </div>
           </div>
         </div>
@@ -33,9 +34,8 @@ export const BasicPageTemplate = ({ title, content, contentComponent }) => {
 };
 
 BasicPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
+  data: PropTypes.string,  
+  location: PropTypes.string.isRequired,
 };
 
 const BasicPage = ({ data }) => {
@@ -44,7 +44,7 @@ const BasicPage = ({ data }) => {
   return (
     <Layout>
       <BasicPageTemplate
-        contentComponent={HTMLContent}
+       
         title={post.frontmatter.title}
         content={post.html}
       />
