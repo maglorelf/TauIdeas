@@ -36,7 +36,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const edges = result.data.allMarkdownRemark.edges
 
   edges.forEach((edge) => {
-    const id = edge.node.id
+    const id = edge.node.id    
     createPage({
       path: edge.node.fields.slug,      
       component: path.resolve(`src/templates/${String(edge.node.frontmatter.templateKey)}.js`

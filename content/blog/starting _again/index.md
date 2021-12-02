@@ -1,7 +1,7 @@
 ---
 title: Starting again
 date: "2021-11-26T00:50:00.000Z"
-description: "Starting a new site"
+description: "First entry in my new site"
 templateKey: 'blog-post'
 ---
 

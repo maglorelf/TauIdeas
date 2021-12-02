@@ -10,7 +10,7 @@ import { initializeAndTrack } from 'gatsby-plugin-gdpr-cookies'
 import "./all.sass";
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
-  const isRootPath = location.pathname === rootPath
+  const isRootPath = true//location.pathname === rootPath
   let header
 
   if (isRootPath) {
