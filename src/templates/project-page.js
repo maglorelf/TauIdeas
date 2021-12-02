@@ -10,7 +10,7 @@ import { graphql, Link } from "gatsby";
  import Content, { HTMLContent } from "../components/Content";
 
 // eslint-disable-next-line
-export const BasicPageTemplate = ({
+export const ProjectPageTemplate = ({
   content,
   contentComponent,
   description,
@@ -18,7 +18,7 @@ export const BasicPageTemplate = ({
   title,
   helmet,
 }) => {
-  const PageContent = contentComponent ;
+  const ProjectContent = contentComponent ;
 
   return (
     <section className="section">      
@@ -30,7 +30,7 @@ export const BasicPageTemplate = ({
               {title}  
             </h1>
             <p>{description}</p>
-            <PageContent content={content} />
+            <ProjectContent content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
@@ -50,7 +50,7 @@ export const BasicPageTemplate = ({
   );
 };
 
-BasicPageTemplate.propTypes = {
+ProjectPageTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
@@ -59,18 +59,18 @@ BasicPageTemplate.propTypes = {
 };
 
 
-const BasicPage = ({ data }) => {
+const ProjectPage = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
   
      <Layout>
-     <BasicPageTemplate
+     <ProjectPageTemplate
        content={post.html}
        contentComponent={HTMLContent}
        description={post.frontmatter.description}
        helmet={
-         <Helmet titleTemplate="%s | Basic">
+         <Helmet titleTemplate="%s | Project">
            <title>{`${post.frontmatter.title}`}</title>
            <meta
              name="description"
@@ -85,16 +85,16 @@ const BasicPage = ({ data }) => {
   );
 };
 
-BasicPage.propTypes = {
+ProjectPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
 };
 
-export default BasicPage;
+export default ProjectPage;
 
 export const pageQuery = graphql`
-  query basicPageByID($id: String!) {
+  query ProjectPageByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
