@@ -1,19 +1,12 @@
 # TauIdeas
 Repository of public main page of Tauideas
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/maglor_elf/TauIdeas">
-    <img src="src\images\tauideas.pnglogo.png" alt="Logo" >
+    <img src="src\images\tauideas.png" alt="Logo" >
   </a>
 
 <h3 align="center">Tauideas Website</h3>
@@ -21,7 +14,7 @@ Repository of public main page of Tauideas
   <p align="center">
     This is the public repository of the Tauideas website. Tauideas is a trademark without any commercial pourposes to show my little projects and learnings in different languages.    
     <br />
-    <a href="https://github.com/maglor_elf/TauIdeas"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/maglor_elf/TauIdeas"><strong>Explore the source</strong></a>
     <br />
     <br />
     <a href="https://www.tauideas.tech">View website</a>
@@ -31,36 +24,6 @@ Repository of public main page of Tauideas
     <a href="https://github.com/maglor_elf/TauIdeas/issues">Request Feature</a>
   </p>
 </div>
-
-
-
-<!-- TABLE OF CONTENTS -->
-<!-- <details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details> -->
-
-
 
 <!-- ABOUT THE PROJECT -->
 
@@ -85,37 +48,29 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 ### Installation
-
+Currently the installation is in gatsby cloud. See the ste
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
 <!-- USAGE EXAMPLES -->
 ## Usage
-
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
+### Gastby commands
+gatsby new: Craete a new project. You can add a prebuild a template
+gatsby develop: Start the server in development server, in this case (http://localhost:8000)
+gatsby build: Compilation of the code to be deployed
+gatsby serve: Deploy a compilation 
+gatsby clean: Clean cache. Useful if you rename a file in develop mode
+gatsby info: Show the list of node modules installed
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
 <!-- ROADMAP -->
 ## Roadmap
-
-- [] Change styles
-
+- This is a little blog. In next few months more functionality will be added
 See the [open issues](https://github.com/maglor_elf/TauIdeas/issues) for a full list of proposed features (and known issues).
-
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- CONTRIBUTING -->
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
+You can use the structure of the project, but I the articles are by my property.
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
 
@@ -126,36 +81,24 @@ Don't forget to give the project a star! Thanks again!
 5. Open a Pull Request
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
 <!-- LICENSE -->
 ## License
-
 Distributed under the MIT License. See `LICENSE` for more information.
-
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
 <!-- CONTACT -->
 ## Contact
-
-Marcos J. Martínez Ramos- [@maglor_elf](https://twitter.com/maglor_elf) 
-
-Project Link: [https://github.com/maglorelf/TauIdeas](https://github.com/maglorelf/TauIdeas)
+Twitter - Marcos J. Martínez Ramos- [@maglor_elf](https://twitter.com/maglor_elf) 
+Linkedin - [Marcos J. Martínez Ramos](https://www.linkedin.com/in/marcos-javier-martinez-ramos/) 
+Project Repository: [https://github.com/maglorelf/TauIdeas](https://github.com/maglorelf/TauIdeas)
+Project Producion: [https://tauideas.tech](https://tauideas.tech)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
+<!-- ACKNOWLEDGMENTS
 ## Acknowledgments
-
 * []()
 * []()
 * []()
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
+ -->
 
