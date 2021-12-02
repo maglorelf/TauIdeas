@@ -1,69 +1,110 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { graphql } from "gatsby";
-import Layout from "../components/Layout";
-import Seo from "../components/seo";
+
+import { Helmet } from "react-helmet";
+import { graphql, Link } from "gatsby";
+
+
+ import Layout from "../components/layout";
+ import Seo from "../components/seo";
+ import Content, { HTMLContent } from "../components/Content";
 
 // eslint-disable-next-line
-export const BasicPageTemplate = ({  data, location  }) => {
-  const post = data.markdownRemark    
-  const siteTitle = data.site.siteMetadata?.title || `Title`
+export const BasicPageTemplate = ({
+  content,
+  contentComponent,
+  description,
+  tags,
+  title,
+  helmet,
+}) => {
+  const PageContent = contentComponent ;
 
   return (
-    <Layout location={location} title={siteTitle}>
-    <Seo
-      title={post.frontmatter.title}
-      description={post.frontmatter.description || post.excerpt}
-    />
-    <section className="section section--gradient">
-      <div className="container">
+    <section className="section">      
+      {helmet || ""}
+      <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {siteTitle}
-              </h2>
-             
-            </div>
+            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+              {title}  
+            </h1>
+            <p>{description}</p>
+            <PageContent content={content} />
+            {tags && tags.length ? (
+              <div style={{ marginTop: `4rem` }}>
+                <h4>Tags</h4>
+                <ul className="taglist">
+                  {tags.map((tag) => (
+                    <li key={tag + `tag`}>
+                      
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
           </div>
         </div>
       </div>
     </section>
-    </Layout>
   );
 };
 
 BasicPageTemplate.propTypes = {
-  data: PropTypes.string,  
-  location: PropTypes.string.isRequired,
+  content: PropTypes.node.isRequired,
+  contentComponent: PropTypes.func,
+  description: PropTypes.string,
+  title: PropTypes.string,
+  helmet: PropTypes.object,
 };
+
 
 const BasicPage = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
-    <Layout>
-      <BasicPageTemplate
-       
-        title={post.frontmatter.title}
-        content={post.html}
-      />
-    </Layout>
+  
+     <Layout>
+     <BasicPageTemplate
+       content={post.html}
+       contentComponent={HTMLContent}
+       description={post.frontmatter.description}
+       helmet={
+         <Helmet titleTemplate="%s | Blog">
+           <title>{`${post.frontmatter.title}`}</title>
+           <meta
+             name="description"
+             content={`${post.frontmatter.description}`}
+           />
+         </Helmet>
+       }
+       tags={post.frontmatter.tags}
+       title={post.frontmatter.title}
+     />
+   </Layout>
   );
 };
 
 BasicPage.propTypes = {
-  data: PropTypes.object.isRequired,
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.object,
+  }),
 };
 
 export default BasicPage;
 
-export const basicPageQuery = graphql`
-  query BasicPage($id: String!) {
+export const pageQuery = graphql`
+  query basicPageByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
+      id
       html
       frontmatter {
+        date(formatString: "MMMM DD, YYYY")
         title
+        description       
+      }
+      fields {
+        slug
       }
     }
   }
