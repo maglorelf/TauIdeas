@@ -61,16 +61,17 @@ BasicPageTemplate.propTypes = {
 
 const BasicPage = ({ data }) => {
   const { markdownRemark: post } = data;
-
+  const siteTitle = post.frontmatter.title || `Title`
+  const location = post.fields.slug
   return (
-  
-     <Layout>
+    <Layout location={location} title={siteTitle}>
+    <Seo title={siteTitle} />  
      <BasicPageTemplate
        content={post.html}
        contentComponent={HTMLContent}
        description={post.frontmatter.description}
        helmet={
-         <Helmet titleTemplate="%s | Basic">
+         <Helmet titleTemplate="%s">
            <title>{`${post.frontmatter.title}`}</title>
            <meta
              name="description"

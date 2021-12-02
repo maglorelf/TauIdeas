@@ -61,7 +61,7 @@ const BlogIndex = ({ data, location }) => {
             }
           </ol>
         </div>  
-        <div className="column column50hv">     
+        <div className="column column70hv">     
         </div>  
       </div>  
      

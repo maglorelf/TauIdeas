@@ -61,10 +61,11 @@ BlogPostTemplate.propTypes = {
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data;
-
-  return (
-  
-     <Layout>
+  const siteTitle = post.frontmatter.title || `Title`
+  const location = post.fields.slug
+  return (     
+        <Layout location={location} title={siteTitle}>
+      <Seo title={siteTitle} />  
      <BlogPostTemplate
        content={post.html}
        contentComponent={HTMLContent}

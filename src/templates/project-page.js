@@ -61,10 +61,11 @@ ProjectPageTemplate.propTypes = {
 
 const ProjectPage = ({ data }) => {
   const { markdownRemark: post } = data;
-
+  const siteTitle = post.frontmatter.title || `Title`
+  const location = post.fields.slug
   return (
-  
-     <Layout>
+    <Layout location={location} title={siteTitle}>
+    <Seo title={siteTitle} />  
      <ProjectPageTemplate
        content={post.html}
        contentComponent={HTMLContent}

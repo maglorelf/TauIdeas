@@ -267,7 +267,9 @@ a:focus {
 .column50hv{
  min-height: 50vh;
 }
-
+.column70hv{
+  min-height: 70vh;
+ }
 .post-list-item {
   margin-bottom: var(--spacing-8);
   margin-top: var(--spacing-8);
