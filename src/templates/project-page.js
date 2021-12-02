@@ -7,7 +7,7 @@ import { graphql, Link } from "gatsby";
 
  import Layout from "../components/layout";
  import Seo from "../components/seo";
- import Content, { HTMLContent } from "../components/Content";
+ import Content, { HTMLContent } from "../components/content";
 
 // eslint-disable-next-line
 export const ProjectPageTemplate = ({
