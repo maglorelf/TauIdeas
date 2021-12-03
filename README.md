@@ -50,13 +50,13 @@ To get a local copy up and running follow these simple example steps.
 
 ### Installation
 
-Currently the installation is in gatsby cloud. See the tutoria in gastbyjs.io
+Currently the installation is in gatsby cloud. See the tutoria in gatsbyjs.com
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Usage
 
-### Gastby commands
+### Gatsby commands
 
 `gatsby new`: Craete a new project. You can add a prebuild a template
 
@@ -74,15 +74,19 @@ Currently the installation is in gatsby cloud. See the tutoria in gastbyjs.io
 
 ## Roadmap
 - This is a little blog. In next few months more functionality will be added
+
 See the [open issues](https://github.com/maglor_elf/TauIdeas/issues) for a full list of proposed features (and known issues).
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- CONTRIBUTING -->
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
 You can use the structure of the project, but I the articles are by my property.
+
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+
 Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
