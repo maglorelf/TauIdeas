@@ -43,24 +43,35 @@ Repository of public main page of Tauideas
 ## Getting Started
 
 This is an example of how you may give instructions on setting up your project locally.
+
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
 ### Installation
-Currently the installation is in gatsby cloud. See the ste
+
+Currently the installation is in gatsby cloud. See the tutoria in gastbyjs.io
+
 <p align="right">(<a href="#top">back to top</a>)</p>
-<!-- USAGE EXAMPLES -->
+
 ## Usage
+
 ### Gastby commands
-gatsby new: Craete a new project. You can add a prebuild a template
-gatsby develop: Start the server in development server, in this case (http://localhost:8000)
-gatsby build: Compilation of the code to be deployed
-gatsby serve: Deploy a compilation 
-gatsby clean: Clean cache. Useful if you rename a file in develop mode
-gatsby info: Show the list of node modules installed
+
+`gatsby new`: Craete a new project. You can add a prebuild a template
+
+`gatsby develop`: Start the server in development server, in this case (http://localhost:8000)
+
+`gatsby build`: Compilation of the code to be deployed
+
+`gatsby serve`: Deploy a compilation 
+
+`gatsby clean`: Clean cache. Useful if you rename a file in develop mode
+
+`gatsby info`: Show the list of node modules installed
+
 <p align="right">(<a href="#top">back to top</a>)</p>
-<!-- ROADMAP -->
+
 ## Roadmap
 - This is a little blog. In next few months more functionality will be added
 See the [open issues](https://github.com/maglor_elf/TauIdeas/issues) for a full list of proposed features (and known issues).
@@ -81,24 +92,20 @@ Don't forget to give the project a star! Thanks again!
 5. Open a Pull Request
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-<!-- LICENSE -->
+
 ## License
 Distributed under the MIT License. See `LICENSE` for more information.
+
 <p align="right">(<a href="#top">back to top</a>)</p>
-<!-- CONTACT -->
+
 ## Contact
 Twitter - Marcos J. Martínez Ramos- [@maglor_elf](https://twitter.com/maglor_elf) 
+
 Linkedin - [Marcos J. Martínez Ramos](https://www.linkedin.com/in/marcos-javier-martinez-ramos/) 
+
 Project Repository: [https://github.com/maglorelf/TauIdeas](https://github.com/maglorelf/TauIdeas)
+
 Project Producion: [https://tauideas.tech](https://tauideas.tech)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-<!-- ACKNOWLEDGMENTS
-## Acknowledgments
-* []()
-* []()
-* []()
-
-<p align="right">(<a href="#top">back to top</a>)</p>
- -->
 
