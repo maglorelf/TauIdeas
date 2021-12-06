@@ -1,6 +1,6 @@
 ---
 title: Tauideas
-creation-date: Creation date: "2021-12-02T00:50:00.000Z"
+creation-date: "2021-12-02T00:50:00.000Z"
 date: "2021-12-02T00:50:00.000Z"
 description: A blog to show my personal portfolio and some technical articles
 templateKey: 'project-page'
