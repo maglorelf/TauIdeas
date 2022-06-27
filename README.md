@@ -58,7 +58,7 @@ Currently the installation is in gatsby cloud. See the tutoria in gatsbyjs.com
 
 ### Gatsby commands
 
-`gatsby new`: Craete a new project. You can add a prebuild a template
+`gatsby new`: Create a new project. You can add a prebuild a template
 
 `gatsby develop`: Start the server in development server, in this case (http://localhost:8000)
 
