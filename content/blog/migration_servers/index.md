@@ -1,6 +1,6 @@
 ---
 title: Migration of servers
-date: "2022-06-30T00:50:00.000Z"
+date: "2022-06-28T00:50:00.000Z"
 description: "Migrate old windows servers to linux servers"
 templateKey: 'blog-post'
 ---
