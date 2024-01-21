@@ -1,115 +1,126 @@
-# TauIdeas
-Repository of public main page of Tauideas
-
-
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/maglor_elf/TauIdeas">
-    <img src="src\images\tauideas.png" alt="Logo" >
+<h1 align=center>Pinwheel Astro</h1>
+<p align=center>Pinwheel is a free multipurpose SaaS theme built with Astro, TailwindCSS and TypeScript with 17+ pre-designed pages.</p>
+<h2 align="center"><a target="_blank" href="https://pinwheel-astro.vercel.app/" rel="nofollow"> 👀 Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/analysis/https-pinwheel-astro-vercel-app/kmaxqwa7rx?form_factor=desktop"> Page Speed (95+) 🚀 </a>
+</h2>
+<p align=center>
+  <a href="https://github.com/withastro/astro/releases/tag/astro%402.0.11" alt="Contributors">
+    <img src="https://img.shields.io/static/v1?label=ASTRO&message=2.0&color=000&logo=astro" />
   </a>
 
-<h3 align="center">Tauideas Website</h3>
+  <a href="https://github.com/themefisher/pinwheel-astro/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/themefisher/pinwheel-astro" alt="license"></a>
 
-  <p align="center">
-    This is the public repository of the Tauideas website. Tauideas is a trademark without any commercial pourposes to show my little projects and learnings in different languages.    
-    <br />
-    <a href="https://github.com/maglor_elf/TauIdeas"><strong>Explore the source</strong></a>
-    <br />
-    <br />
-    <a href="https://www.tauideas.tech">View website</a>
-    ·
-    <a href="https://github.com/maglor_elf/TauIdeas/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/maglor_elf/TauIdeas/issues">Request Feature</a>
-  </p>
-</div>
+  <img src="https://img.shields.io/github/languages/code-size/themefisher/pinwheel-astro" alt="code size">
 
-<!-- ABOUT THE PROJECT -->
+  <a href="https://github.com/themefisher/pinwheel-astro/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/themefisher/bigspring-light-astro" alt="contributors"></a>
+</p>
+
+![pinwheel](https://demo.themefisher.com/thumbnails/pinwheel.png)
+
+<!-- small description -->
+
+<!-- key features -->
+## 📌 Key Features
+
+- 📄 17+ Pre-designed pages
+- 🎨 Highly customizable (Color, Font, Menu, Social Links, SEO Meta Tags, etc.)
+-  🗃️ Taxonomy support
+-  ⚡ Fast by default (95+ Google PageSpeed Score)
+-  🔧 Netlify setting pre-configured
+-  📝 Contact form support
+-  🖼️ Support OG image
+-  📝 Write and update content in Markdown / MDX
+-  💻 MDX components auto import
+-  📝 Includes draft pages and posts
+-  🎨 Built with Tailwind CSS framework
+-  📱 Fully responsive on desktops, tablets, and smartphones
+-  🔍 SEO Friendly
+-  💬 Disqus comment support
 
 
+## 📄 17+ Pre-Designed Pages
 
-### Built With
+- 🏠 Home
+- 🛠️ How it works
+- 🌟 Features
+- 📝 Blog
+- 📝 Blog Single
+- 🗂️ Categories
+- 🗂️ Category Single
+- 👤 About
+- 📞 Contact
+- 💼 Career
+- 💼 Career Single
+- 💰 Pricing
+- 📜 Changelog
+- 🔑 Sign In
+- 🔑 Sing Up
+- 🔗 Integrations
+- 🔗 Integration Single
+- 📜 Terms and Conditions
+- 💡 Elements
 
-* [Gatsby.js](https://gatsbyjs.com/)
-* [React.js](https://reactjs.org/)
-* [Bulma](https://bulma.io/)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<!-- installation -->
+## 🛠️ Installation
+
+After downloading the template, you have some prerequisites to install. Then you can run it on your localhost. You can view the package.json file to see which scripts are included.
+
+### Install prerequisites (once for a machine)
+
+- **Node Installation:** [Install node js](https://nodejs.org/en/download/) [Recommended LTS version]
+
+### 👨🏻‍💻 Local setup
+
+After successfully installing those dependencies, open this template with any IDE [[VS Code](https://code.visualstudio.com/) recommended], and then open the internal terminal of IDM [vs code shortcut <code>ctrl/cmd+\`</code>]
+
+- 👉 Install dependencies
+
+```
+npm install
+```
+
+- 👉 Run locally
+
+```
+npm run dev
+```
+
+After that, it will open up a preview of the template in your default browser, watch for changes to source files, and live-reload the browser when changes are saved.
+
+## 🏗️ Production Build
+
+After finishing all the customization, you can create a production build by running this command.
+
+```
+npm run build
+```
+
+<!-- reporting issue -->
+## 🐞 Reporting Issues
+
+We use GitHub Issues as the official bug tracker for this Template. Please Search [existing issues](https://github.com/themefisher/pinwheel-astro/issues). It’s possible someone has already reported the same problem.
+If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/themefisher/pinwheel-astro/issues).
+
+<!-- licence -->
+## 📝 License
+
+Copyright (c) 2016 - Present, Designed & Developed by [Themefisher](https://themefisher.com)
+
+**Code License:** Released under the [MIT](https://github.com/themefisher/pinwheel-astro/blob/main/LICENSE) license.
+
+**Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.
+
+## 💻  Need Custom Development Services?
+
+Besides developing beautifully designed and blazing-fast themes, we help businesses create fast, performance-focused, scalable & secure websites based on NextJs, Hugo, Astro, etc.
+
+If you need a custom theme, theme customization, or complete website development services from scratch you can [Hire Us](https://themefisher.com/contact).
 
 
+## 🔥 More Astro Themes By Themefisher
 
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Installation
-
-Currently the installation is in gatsby cloud. See the tutoria in gatsbyjs.com
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-## Usage
-
-### Gatsby commands
-
-`gatsby new`: Create a new project. You can add a prebuild a template
-
-`gatsby develop`: Start the server in development server, in this case (http://localhost:8000)
-
-`gatsby build`: Compilation of the code to be deployed
-
-`gatsby serve`: Deploy a compilation 
-
-`gatsby clean`: Clean cache. Useful if you rename a file in develop mode
-
-`gatsby info`: Show the list of node modules installed
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-## Roadmap
-- This is a little blog. In next few months more functionality will be added
-
-See the [open issues](https://github.com/maglor_elf/TauIdeas/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-You can use the structure of the project, but I the articles are by my property.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-## License
-Distributed under the MIT License. See `LICENSE` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-## Contact
-Twitter - Marcos J. Martínez Ramos- [@maglor_elf](https://twitter.com/maglor_elf) 
-
-Linkedin - [Marcos J. Martínez Ramos](https://www.linkedin.com/in/marcos-javier-martinez-ramos/) 
-
-Project Repository: [https://github.com/maglorelf/TauIdeas](https://github.com/maglorelf/TauIdeas)
-
-Project Producion: [https://tauideas.tech](https://tauideas.tech)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
+| [![Bigpsring](https://demo.gethugothemes.com/thumbnails/bigspring.png)](https://themefisher.com/products/bigspring-light-astro) | [![Andromeda](https://demo.gethugothemes.com/thumbnails/andromeda.png)](https://themefisher.com/products/andromeda-astro) | [![Bookwrom](https://demo.gethugothemes.com/thumbnails/bookworm.png)](https://themefisher.com/products/bookworm-astro) |
+|:---:|:---:|:---:|
+| **Bigpsring Light**| **Andromeda** | **Bookwom Light** |
