@@ -1,87 +1,60 @@
-<h1 align=center>Pinwheel Astro</h1>
-<p align=center>Pinwheel is a free multipurpose SaaS theme built with Astro, TailwindCSS and TypeScript with 17+ pre-designed pages.</p>
-<h2 align="center"><a target="_blank" href="https://pinwheel-astro.vercel.app/" rel="nofollow"> 👀 Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/analysis/https-pinwheel-astro-vercel-app/kmaxqwa7rx?form_factor=desktop"> Page Speed (95+) 🚀 </a>
+<h1 align=center>TauIdeas</h1>
+  <a href="https://github.com/maglor_elf/TauIdeas">
+    <img src="public\images\tauideas.png" alt="Logo" >
+  </a>
+<p align=center>This is the public repository of the Tauideas website. Tauideas is a trademark without any commercial pourposes to show my little projects and learnings in different languages.</p>
+<h4 align="center">
+    <a target="_blank" href="https://github.com/maglor_elf/TauIdeas" rel="nofollow">Source Code</a>
+    ·
+    <a target="_blank" href="https://www.tauideas.tech" rel="nofollow">View website</a>
+    ·
+    <a target="_blank" href="https://github.com/maglor_elf/TauIdeas/issues" rel="nofollow">Report Bug</a>
+    ·
+    <a target="_blank" href="https://github.com/maglor_elf/TauIdeas/issues" rel="nofollow">Request Feature</a>
+  </p>
+
 </h2>
 <p align=center>
-  <a href="https://github.com/withastro/astro/releases/tag/astro%402.0.11" alt="Contributors">
+  <a href="https://github.com/withastro/astro/releases/tag/astro%402.0.11" alt="Framework">
     <img src="https://img.shields.io/static/v1?label=ASTRO&message=2.0&color=000&logo=astro" />
   </a>
 
-  <a href="https://github.com/themefisher/pinwheel-astro/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/themefisher/pinwheel-astro" alt="license"></a>
+  <a href="https://github.com/maglorelf/TauIdeas/main/LICENSE">
+    <img src="https://img.shields.io/github/license/maglorelf/TauIdeas" alt="license"></a>
 
-  <img src="https://img.shields.io/github/languages/code-size/themefisher/pinwheel-astro" alt="code size">
+  <img src="https://img.shields.io/github/languages/code-size/maglorelf/TauIdeas" alt="code size">
 
-  <a href="https://github.com/themefisher/pinwheel-astro/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/themefisher/bigspring-light-astro" alt="contributors"></a>
+  <a href="https://github.com/maglorelf/TauIdeas/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/maglorelf/TauIdeas" alt="contributors"></a>
 </p>
 
-![pinwheel](https://demo.themefisher.com/thumbnails/pinwheel.png)
+<!-- ABOUT THE PROJECT -->
+### Built With
 
-<!-- small description -->
+* [Astro](https://astro.build/)
 
-<!-- key features -->
-## 📌 Key Features
-
-- 📄 17+ Pre-designed pages
-- 🎨 Highly customizable (Color, Font, Menu, Social Links, SEO Meta Tags, etc.)
--  🗃️ Taxonomy support
--  ⚡ Fast by default (95+ Google PageSpeed Score)
--  🔧 Netlify setting pre-configured
--  📝 Contact form support
--  🖼️ Support OG image
--  📝 Write and update content in Markdown / MDX
--  💻 MDX components auto import
--  📝 Includes draft pages and posts
--  🎨 Built with Tailwind CSS framework
--  📱 Fully responsive on desktops, tablets, and smartphones
--  🔍 SEO Friendly
--  💬 Disqus comment support
-
-
-## 📄 17+ Pre-Designed Pages
-
-- 🏠 Home
-- 🛠️ How it works
-- 🌟 Features
-- 📝 Blog
-- 📝 Blog Single
-- 🗂️ Categories
-- 🗂️ Category Single
-- 👤 About
-- 📞 Contact
-- 💼 Career
-- 💼 Career Single
-- 💰 Pricing
-- 📜 Changelog
-- 🔑 Sign In
-- 🔑 Sing Up
-- 🔗 Integrations
-- 🔗 Integration Single
-- 📜 Terms and Conditions
-- 💡 Elements
-
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- installation -->
-## 🛠️ Installation
+## Installation
 
-After downloading the template, you have some prerequisites to install. Then you can run it on your localhost. You can view the package.json file to see which scripts are included.
+After downloading the project, you have some prerequisites to install. Then you can run it on your localhost. You can view the package.json file to see which scripts are included.
 
 ### Install prerequisites (once for a machine)
 
 - **Node Installation:** [Install node js](https://nodejs.org/en/download/) [Recommended LTS version]
 
-### 👨🏻‍💻 Local setup
+### Local setup
 
 After successfully installing those dependencies, open this template with any IDE [[VS Code](https://code.visualstudio.com/) recommended], and then open the internal terminal of IDM [vs code shortcut <code>ctrl/cmd+\`</code>]
 
-- 👉 Install dependencies
+- Install dependencies
 
 ```
 npm install
 ```
 
-- 👉 Run locally
+- Run locally
 
 ```
 npm run dev
@@ -89,7 +62,7 @@ npm run dev
 
 After that, it will open up a preview of the template in your default browser, watch for changes to source files, and live-reload the browser when changes are saved.
 
-## 🏗️ Production Build
+## Production Build
 
 After finishing all the customization, you can create a production build by running this command.
 
@@ -97,30 +70,48 @@ After finishing all the customization, you can create a production build by runn
 npm run build
 ```
 
-<!-- reporting issue -->
-## 🐞 Reporting Issues
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-We use GitHub Issues as the official bug tracker for this Template. Please Search [existing issues](https://github.com/themefisher/pinwheel-astro/issues). It’s possible someone has already reported the same problem.
-If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/themefisher/pinwheel-astro/issues).
+## Roadmap
+- This is a little blog. In next few months more functionality will be added
 
-<!-- licence -->
-## 📝 License
+See the [open issues](https://github.com/maglor_elf/TauIdeas/issues) for a full list of proposed features (and known issues).
 
-Copyright (c) 2016 - Present, Designed & Developed by [Themefisher](https://themefisher.com)
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-**Code License:** Released under the [MIT](https://github.com/themefisher/pinwheel-astro/blob/main/LICENSE) license.
+## Contributing
 
-**Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-## 💻  Need Custom Development Services?
+You can use the structure of the project, but I the articles are by my property.
 
-Besides developing beautifully designed and blazing-fast themes, we help businesses create fast, performance-focused, scalable & secure websites based on NextJs, Hugo, Astro, etc.
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 
-If you need a custom theme, theme customization, or complete website development services from scratch you can [Hire Us](https://themefisher.com/contact).
+Don't forget to give the project a star! Thanks again!
 
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## 🔥 More Astro Themes By Themefisher
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-| [![Bigpsring](https://demo.gethugothemes.com/thumbnails/bigspring.png)](https://themefisher.com/products/bigspring-light-astro) | [![Andromeda](https://demo.gethugothemes.com/thumbnails/andromeda.png)](https://themefisher.com/products/andromeda-astro) | [![Bookwrom](https://demo.gethugothemes.com/thumbnails/bookworm.png)](https://themefisher.com/products/bookworm-astro) |
-|:---:|:---:|:---:|
-| **Bigpsring Light**| **Andromeda** | **Bookwom Light** |
+## License
+
+Copyright (c) 2024 - Present, Designed & Developed by [Marcos J. Martínez](https://tauideas.tech)
+
+**Code License:** Released under the [MIT](https://github.com/maglorelf/TauIdeas/main/LICENSE) license.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Contact
+Twitter - Marcos J. Martínez Ramos- [@maglor_elf](https://twitter.com/maglor_elf) 
+
+Linkedin - [Marcos J. Martínez Ramos](https://www.linkedin.com/in/marcos-javier-martinez-ramos/) 
+
+Project Repository: [https://github.com/maglorelf/TauIdeas](https://github.com/maglorelf/TauIdeas)
+
+Project Producion: [https://tauideas.tech](https://tauideas.tech)
+
+<p align="right">(<a href="#top">back to top</a>)</p>

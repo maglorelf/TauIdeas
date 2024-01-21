@@ -4,8 +4,8 @@
     "base_url": "https://pinwheel-astro.vercel.app",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "/images/favicon.png",
-    "logo": "/images/logo.png",
+    "favicon": "/images-default/favicon.png",
+    "logo": "/images-default/logo.png",
     "logo_width": "147",
     "logo_height": "31",
     "logo_text": "Pinwheel"
@@ -43,7 +43,7 @@
 
   "metadata": {
     "meta_author": "Themefisher",
-    "meta_image": "/images/og-image.png",
+    "meta_image": "/images-default/og-image.png",
     "meta_description": "pinwheel astro"
   }
 }

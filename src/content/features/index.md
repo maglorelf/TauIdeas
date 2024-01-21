@@ -3,7 +3,7 @@ title: Features
 banner:
   title: Connects with all your other tools to create a smooth experience.
   content: Donec sollicitudin molestie malesda. Donec sollitudin molestie malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies ligula sed magna dictum porta.
-  image: "/images/features-banner-img.png"
+  image: "/images-default/features-banner-img.png"
   button:
     label: Download The Theme
     link: "https://themefisher.com/astro-themes/pinwheel-astro"
@@ -36,7 +36,7 @@ project_management:
   feature_service:
     title: Accept payments from devices any country in this universe
     description: Donec sollicitudin molestie malesda. Donec sollitudin molestie malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies ligula sed
-    image: "/images/features/feature-img-1.png"
+    image: "/images-default/features/feature-img-1.png"
     list:
       - Supporting more than 119 country world
       - Open transaction with more than currencies
@@ -54,11 +54,11 @@ project_management:
     list:
       - title: Transaction from Anyone with <br /> a world to Anywhere
         content: Donec sollicitudin molestie malesda. Donec sollitudin molestie malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies ligula sed
-        image: "/images/features/feature-img-2.png"
+        image: "/images-default/features/feature-img-2.png"
       - title: Integrate Checkout with Process Smoothly
         content: Donec sollicitudin molestie malesda. Donec sollitudin molestie malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies ligula sed
-        image: "/images/features/feature-img-1.png"
+        image: "/images-default/features/feature-img-1.png"
       - title: Transaction from Anyone with <br /> a world to Anywhere
         content: Donec sollicitudin molestie malesda. Donec sollitudin molestie malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies ligula sed
-        image: "/images/features/feature-img-2.png"
+        image: "/images-default/features/feature-img-2.png"
 ---
