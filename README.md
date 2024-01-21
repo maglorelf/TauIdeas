@@ -103,6 +103,8 @@ Copyright (c) 2024 - Present, Designed & Developed by [Marcos J. Martínez](http
 
 **Code License:** Released under the [MIT](https://github.com/maglorelf/TauIdeas/main/LICENSE) license.
 
+Template based in [Pinwheel theme](https://github.com/themefisher/pinwheel-astro)
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Contact
