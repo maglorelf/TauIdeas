@@ -1,7 +1,7 @@
 {
-  "name": "pinwheel-astro",
+  "name": "tauideas",
   "version": "1.0.0",
-  "author": "themefisher",
+  "author": "maglor_elf",
   "license": "MIT",
   "packageManager": "yarn@1.22.19",
   "scripts": {
