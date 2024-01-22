@@ -1,14 +1,14 @@
 {
   "site": {
-    "title": "Pinwheel Astro",
-    "base_url": "https://pinwheel-astro.vercel.app",
+    "title": "Tau Ideas",
+    "base_url": "https://tauideas.tech",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images-default/favicon.png",
-    "logo": "/images-default/logo.png",
-    "logo_width": "147",
-    "logo_height": "31",
-    "logo_text": "Pinwheel"
+    "logo": "/images/logo.png",
+    "logo_width": "153",
+    "logo_height": "60",
+    "logo_text": "TauIdeas"
   },
 
   "settings": {
@@ -18,17 +18,17 @@
   },
 
   "call_to_action": {
-    "title": "Helping teams in the world with focus",
-    "description": "Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo tellus, sed condimentum volutpat.",
+    "title": "Trying to improve the World",
+    "description": "I'm open for collaboration (professional or not).",
     "button": {
-      "label": "Download The Theme",
-      "link": "https://themefisher.com/astro-themes/pinwheel-astro"
+      "label": "Contact with me",
+      "link": "https://www.linkedin.com/in/marcos-javier-martinez-ramos/"
     }
   },
 
   "disqus": {
     "enable": true,
-    "shortname": "themefisher-template",
+    "shortname": "tauideas",
     "settings": {}
   },
 
