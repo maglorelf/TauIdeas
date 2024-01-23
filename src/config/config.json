@@ -4,10 +4,10 @@
     "base_url": "https://tauideas.tech",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "/images-default/favicon.png",
+    "favicon": "/images/favicon.png",
     "logo": "/images/logo.png",
-    "logo_width": "153",
-    "logo_height": "60",
+    "logo_width": "150",
+    "logo_height": "84",
     "logo_text": "TauIdeas"
   },
 
@@ -33,12 +33,12 @@
   },
 
   "params": {
-    "footer_description": "Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo tellus, sed condimentum volutpat.",
-    "email": "info@andromeda.io",
-    "location": "2118 Thornridge Cir. Syracuse, Connecticut 35624",
-    "phone": "+704-555-0127",
+    "footer_description": "Faber est suae quisque fortunae",
+    "email": "maglor_elf@yahoo.es",
+    "location": "Calle ##### A Coruña, España",
+    "phone": "+34 000 00 00 00",
     "contact_form_action": "#",
-    "copyright": "Copyright © 2023 a theme by [Themefisher](https://themefisher.com)"
+    "copyright": "Copyright © 2024 by TauIdeas"
   },
 
   "metadata": {

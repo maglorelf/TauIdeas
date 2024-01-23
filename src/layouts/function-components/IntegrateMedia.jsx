@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { humanize } from "@lib/utils/textConverter";
 import { marked } from "marked";
-import { AiOutlineArrowRight } from "react-icons/ai/index.js";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 const IntegrateMedia = ({ integrations, categories }) => {
   const [tab, setTab] = useState("");
