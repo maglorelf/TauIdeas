@@ -1,74 +1,74 @@
-# TauIdeas
-Repository of public main page of Tauideas
-
-
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
+<h1 align=center>TauIdeas</h1>
   <a href="https://github.com/maglor_elf/TauIdeas">
-    <img src="src\images\tauideas.png" alt="Logo" >
+    <img src="public\images\tauideas.png" alt="Logo" >
+  </a>
+<p align=center>This is the public repository of the Tauideas website. Tauideas is a trademark without any commercial pourposes to show my little projects and learnings in different languages.</p>
+<h4 align="center">
+    <a target="_blank" href="https://github.com/maglor_elf/TauIdeas" rel="nofollow">Source Code</a>
+    ·
+    <a target="_blank" href="https://www.tauideas.tech" rel="nofollow">View website</a>
+    ·
+    <a target="_blank" href="https://github.com/maglor_elf/TauIdeas/issues" rel="nofollow">Report Bug</a>
+    ·
+    <a target="_blank" href="https://github.com/maglor_elf/TauIdeas/issues" rel="nofollow">Request Feature</a>
+  </p>
+
+</h2>
+<p align=center>
+  <a href="https://github.com/withastro/astro/releases/tag/astro%402.0.11" alt="Framework">
+    <img src="https://img.shields.io/static/v1?label=ASTRO&message=2.0&color=000&logo=astro" />
   </a>
 
-<h3 align="center">Tauideas Website</h3>
+  <a href="https://github.com/maglorelf/TauIdeas/main/LICENSE">
+    <img src="https://img.shields.io/github/license/maglorelf/TauIdeas" alt="license"></a>
 
-  <p align="center">
-    This is the public repository of the Tauideas website. Tauideas is a trademark without any commercial pourposes to show my little projects and learnings in different languages.    
-    <br />
-    <a href="https://github.com/maglor_elf/TauIdeas"><strong>Explore the source</strong></a>
-    <br />
-    <br />
-    <a href="https://www.tauideas.tech">View website</a>
-    ·
-    <a href="https://github.com/maglor_elf/TauIdeas/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/maglor_elf/TauIdeas/issues">Request Feature</a>
-  </p>
-</div>
+  <img src="https://img.shields.io/github/languages/code-size/maglorelf/TauIdeas" alt="code size">
+
+  <a href="https://github.com/maglorelf/TauIdeas/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/maglorelf/TauIdeas" alt="contributors"></a>
+</p>
 
 <!-- ABOUT THE PROJECT -->
-
-
-
 ### Built With
 
-* [Gatsby.js](https://gatsbyjs.com/)
-* [React.js](https://reactjs.org/)
-* [Bulma](https://bulma.io/)
+* [Astro](https://astro.build/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+<!-- installation -->
+## Installation
 
+After downloading the project, you have some prerequisites to install. Then you can run it on your localhost. You can view the package.json file to see which scripts are included.
 
-<!-- GETTING STARTED -->
-## Getting Started
+### Install prerequisites (once for a machine)
 
-This is an example of how you may give instructions on setting up your project locally.
+- **Node Installation:** [Install node js](https://nodejs.org/en/download/) [Recommended LTS version]
 
-To get a local copy up and running follow these simple example steps.
+### Local setup
 
-### Prerequisites
+After successfully installing those dependencies, open this template with any IDE [[VS Code](https://code.visualstudio.com/) recommended], and then open the internal terminal of IDM [vs code shortcut <code>ctrl/cmd+\`</code>]
 
-### Installation
+- Install dependencies
 
-Currently the installation is in gatsby cloud. See the tutoria in gatsbyjs.com
+```
+npm install
+```
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+- Run locally
 
-## Usage
+```
+npm run dev
+```
 
-### Gatsby commands
+After that, it will open up a preview of the template in your default browser, watch for changes to source files, and live-reload the browser when changes are saved.
 
-`gatsby new`: Create a new project. You can add a prebuild a template
+## Production Build
 
-`gatsby develop`: Start the server in development server, in this case (http://localhost:8000)
+After finishing all the customization, you can create a production build by running this command.
 
-`gatsby build`: Compilation of the code to be deployed
-
-`gatsby serve`: Deploy a compilation 
-
-`gatsby clean`: Clean cache. Useful if you rename a file in develop mode
-
-`gatsby info`: Show the list of node modules installed
+```
+npm run build
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -98,7 +98,12 @@ Don't forget to give the project a star! Thanks again!
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## License
-Distributed under the MIT License. See `LICENSE` for more information.
+
+Copyright (c) 2024 - Present, Designed & Developed by [Marcos J. Martínez](https://tauideas.tech)
+
+**Code License:** Released under the [MIT](https://github.com/maglorelf/TauIdeas/main/LICENSE) license.
+
+Template based in [Pinwheel theme](https://github.com/themefisher/pinwheel-astro)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -112,4 +117,3 @@ Project Repository: [https://github.com/maglorelf/TauIdeas](https://github.com/m
 Project Producion: [https://tauideas.tech](https://tauideas.tech)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-

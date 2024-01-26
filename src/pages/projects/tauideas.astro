@@ -1,0 +1,26 @@
+---
+import FeatureBanner from "@components/features/FeatureBanner.astro";
+import ProjecManagement from "@components/features/ProjecManagement.astro";
+import PageHeader from "@components/PageHeader.astro";
+import Shape from "@components/Shape.astro";
+import Base from "@layouts/Base.astro";
+import Cta from "@layouts/partials/Cta.astro";
+import { getEntryBySlug } from "astro:content";
+
+const project = await getEntryBySlug("projects", "tauideas");
+---
+
+<Base
+  title={project.data.title}
+  meta_title={project.data.meta_title}
+  description={project.data.description}
+  image={project.data.image}
+>
+  <section class="page-hero pt-16">
+    <div class="container">
+      <PageHeader page_data={project.data} />
+    </div>
+  </section> 
+  <!-- <ProjecManagement features={project.data} /> -->
+  <div style="   min-height:200px;">&nbsp;</div>
+</Base>

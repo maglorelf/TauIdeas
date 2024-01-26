@@ -1,0 +1,85 @@
+{
+  "main": [
+    { 
+      "name": "Home",
+      "url": "/",
+      "hasChildren": false,
+      "children": [
+        {
+          "name": "Career",
+          "url": "/career"
+        },        
+        {
+          "name": "Integrations",
+          "url": "/integrations"
+        },
+        {
+          "name": "Pricing",
+          "url": "/pricing"
+        },
+        {
+          "name": "Sign In",
+          "url": "/signin"
+        },
+        {
+          "name": "Elements",
+          "url": "/elements"
+        },
+        {
+          "name": "Changelog",
+          "url": "/changelog"
+        },        
+        {
+          "name": "How It Works",
+          "url": "/how-it-works"
+        }
+      ]
+    },
+    {
+      "name": "About",
+      "url": "/about"
+    },
+    {
+      "name": "Blog",
+      "url": "/blog"
+    },    
+    {
+      "name": "Projects",
+      "url": "",
+      "hasChildren": true,
+      "children": [       
+        {
+          "name": "Tauideas",
+          "url": "/projects/tauideas"
+        },
+        {
+          "name": "On Chess",
+          "url": "/projects/onchess"
+        },
+        {
+          "name": "Giftsteer",
+          "url": "/projects/giftsteer"
+        }
+      ]
+    }   
+  ],
+
+  "footer": [
+    {
+      "name": "About",
+      "url": "/about"
+    },
+    {
+      "name": "Privacy policy",
+      "url": "/privacy"
+    },
+    {
+      "name": "Terms of use",
+      "url": "/terms-and-conditions"
+    },
+    {
+      "name": "Cookies Policy",
+      "url": "/cookie_policy"
+    }
+  ]
+}
