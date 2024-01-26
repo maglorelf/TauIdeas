@@ -1,22 +1,27 @@
 ---
 import FeatureBanner from "@components/features/FeatureBanner.astro";
 import ProjecManagement from "@components/features/ProjecManagement.astro";
+import PageHeader from "@components/PageHeader.astro";
 import Shape from "@components/Shape.astro";
 import Base from "@layouts/Base.astro";
 import Cta from "@layouts/partials/Cta.astro";
 import { getEntryBySlug } from "astro:content";
 
-const features = await getEntryBySlug("features", "index");
+const project = await getEntryBySlug("projects", "giftsteer");
 ---
 
 <Base
-  title={features.data.title}
-  meta_title={features.data.meta_title}
-  description={features.data.description}
-  image={features.data.image}
+  title={project.data.title}
+  meta_title={project.data.meta_title}
+  description={project.data.description}
+  image={project.data.image}
 >
-  <Shape />
-  <FeatureBanner features={features.data} />
-  <ProjecManagement features={features.data} />
-  <Cta />
+<section class="page-hero pt-16">
+  <div class="container">
+    <PageHeader page_data={project.data} />
+  </div>
+</section> 
+<!-- <ProjecManagement features={project.data} /> -->
+<div style="   min-height:200px;">&nbsp;</div>
+
 </Base>
