@@ -1,8 +1,39 @@
 {
   "main": [
-    {
+    { 
       "name": "Home",
-      "url": "/"
+      "url": "/",
+      "hasChildren": false,
+      "children": [
+        {
+          "name": "Career",
+          "url": "/career"
+        },        
+        {
+          "name": "Integrations",
+          "url": "/integrations"
+        },
+        {
+          "name": "Pricing",
+          "url": "/pricing"
+        },
+        {
+          "name": "Sign In",
+          "url": "/signin"
+        },
+        {
+          "name": "Elements",
+          "url": "/elements"
+        },
+        {
+          "name": "Changelog",
+          "url": "/changelog"
+        },        
+        {
+          "name": "How It Works",
+          "url": "/how-it-works"
+        }
+      ]
     },
     {
       "name": "About",
@@ -30,46 +61,7 @@
           "url": "/projects/giftsteer"
         }
       ]
-    },
-    { 
-      "name": "Pages",
-      "url": "",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "Career",
-          "url": "/career"
-        },        
-        {
-          "name": "Integrations",
-          "url": "/integrations"
-        },
-        {
-          "name": "Pricing",
-          "url": "/pricing"
-        },
-        {
-          "name": "Sign In",
-          "url": "/signin"
-        },
-        {
-          "name": "Elements",
-          "url": "/elements"
-        },
-        {
-          "name": "Changelog",
-          "url": "/changelog"
-        },
-        {
-          "name": "Terms And Conditions",
-          "url": "/terms-and-conditions"
-        },
-        {
-          "name": "How It Works",
-          "url": "/how-it-works"
-        }
-    ]
-  }
+    }   
   ],
 
   "footer": [
@@ -78,16 +70,16 @@
       "url": "/about"
     },
     {
-      "name": "Privacy",
+      "name": "Privacy policy",
       "url": "/privacy"
     },
     {
       "name": "Terms of use",
-      "url": "/useterms"
+      "url": "/terms-and-conditions"
     },
     {
-      "name": "Cookies",
-      "url": "/cookies"
+      "name": "Cookies Policy",
+      "url": "/cookie_policy"
     }
   ]
 }
