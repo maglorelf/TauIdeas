@@ -27,14 +27,14 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
      inkscape:zoom="1"
-     inkscape:cx="1108"
-     inkscape:cy="312.5"
+     inkscape:cx="556"
+     inkscape:cy="349.5"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="layer2" />
   <defs
      id="defs1">
     <linearGradient
@@ -101,7 +101,7 @@
        xml:space="preserve"
        transform="matrix(0.37704633,0,0,0.3215195,-66.295228,-4.807982)"
        id="text2"
-       style="font-style:normal;font-weight:normal;font-size:266.667px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect2);fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter195)"><tspan
+       style="font-style:normal;font-weight:normal;font-size:266.667px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect2);display:inline;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter195)"><tspan
          x="186.39648"
          y="390.37001"
          id="tspan4"><tspan
@@ -129,6 +129,24 @@
        inkscape:transform-center-x="-18.85975"
        inkscape:transform-center-y="-0.020100808"
        style="opacity:1;mix-blend-mode:color-burn;fill:none;stroke:#ff0000;stroke-width:9.67771;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       transform="matrix(-1.9136897,0.01670051,0.01670051,1.9136897,889.39443,27.234827)" />
+    <path
+       sodipodi:type="star"
+       id="path3-3"
+       inkscape:flatsided="false"
+       sodipodi:sides="3"
+       sodipodi:cx="332.43542"
+       sodipodi:cy="37.992619"
+       sodipodi:r1="39.455566"
+       sodipodi:r2="19.727783"
+       sodipodi:arg1="3.1323337"
+       sodipodi:arg2="4.1795312"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 292.98155,38.357931 29.43222,-17.358013 29.43222,-17.3580137 0.31637,34.1680577 0.31637,34.168059 -29.74859,-16.810045 z"
+       inkscape:transform-center-x="-18.85975"
+       inkscape:transform-center-y="-0.020100808"
+       style="mix-blend-mode:color-burn;fill:none;stroke:#ff0000;stroke-width:9.67771;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        transform="matrix(-1.9136897,0.01670051,0.01670051,1.9136897,889.39443,27.234827)" />
   </g>
 </svg>

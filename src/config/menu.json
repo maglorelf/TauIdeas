@@ -11,16 +11,27 @@
     {
       "name": "Blog",
       "url": "/blog"
-    },
+    },    
     {
-      "name": "Features",
-      "url": "/features"
+      "name": "Projects",
+      "url": "",
+      "hasChildren": true,
+      "children": [       
+        {
+          "name": "Tauideas",
+          "url": "/projects/tauideas"
+        },
+        {
+          "name": "On Chess",
+          "url": "/projects/onchess"
+        },
+        {
+          "name": "Giftsteer",
+          "url": "/projects/giftsteer"
+        }
+      ]
     },
-    {
-      "name": "How It Works",
-      "url": "/how-it-works"
-    },
-    {
+    { 
       "name": "Pages",
       "url": "",
       "hasChildren": true,
@@ -28,13 +39,11 @@
         {
           "name": "Career",
           "url": "/career"
-        },
-
+        },        
         {
           "name": "Integrations",
           "url": "/integrations"
         },
-
         {
           "name": "Pricing",
           "url": "/pricing"
@@ -43,7 +52,6 @@
           "name": "Sign In",
           "url": "/signin"
         },
-
         {
           "name": "Elements",
           "url": "/elements"
@@ -55,13 +63,13 @@
         {
           "name": "Terms And Conditions",
           "url": "/terms-and-conditions"
+        },
+        {
+          "name": "How It Works",
+          "url": "/how-it-works"
         }
-      ]
-    },
-    {
-      "name": "Contact",
-      "url": "/contact"
-    }
+    ]
+  }
   ],
 
   "footer": [
@@ -70,16 +78,16 @@
       "url": "/about"
     },
     {
-      "name": "Contact",
-      "url": "/contact"
+      "name": "Privacy",
+      "url": "/privacy"
     },
     {
-      "name": "Elements",
-      "url": "/elements"
+      "name": "Terms of use",
+      "url": "/useterms"
     },
     {
-      "name": "Changelog",
-      "url": "/changelog"
+      "name": "Cookies",
+      "url": "/cookies"
     }
   ]
 }
