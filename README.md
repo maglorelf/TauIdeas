@@ -6,7 +6,7 @@
 <h4 align="center">
     <a target="_blank" href="https://github.com/maglor_elf/TauIdeas" rel="nofollow">Source Code</a>
     ·
-    <a target="_blank" href="https://www.tauideas.tech" rel="nofollow">View website</a>
+    <a target="_blank" href="https://tauideas.tech" rel="nofollow">View website</a>
     ·
     <a target="_blank" href="https://github.com/maglor_elf/TauIdeas/issues" rel="nofollow">Report Bug</a>
     ·
