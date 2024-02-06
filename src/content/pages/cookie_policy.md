@@ -21,4 +21,4 @@ If You do not accept Our Cookies, You may experience some inconvenience in your 
 If You'd like to delete Cookies or instruct your web browser to delete or refuse Cookies, please visit the help pages of your web browser.
 
 ### Contact
-You can contact with us in the mail info1.alquilala-tauideas@yahoo.com
+You can contact with us in the mail hello@tauideas.tech
