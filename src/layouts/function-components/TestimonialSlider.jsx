@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { Star } from "react-feather";
 import SwiperCore, { Autoplay, Pagination } from "swiper";
 import "swiper/css";

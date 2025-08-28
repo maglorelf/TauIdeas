@@ -1,5 +1,5 @@
 import { marked } from "marked";
-import { useState } from "react";
+import React, { useState } from "react";
 
 const FeatureTab = ({ feature_tab }) => {
   const [tab, setTab] = useState(0);

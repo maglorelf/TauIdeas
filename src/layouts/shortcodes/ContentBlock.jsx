@@ -1,3 +1,4 @@
+import React from "react";
 import { markdownify } from "@lib/utils/textConverter";
 
 const ContentBlock = ({

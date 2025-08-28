@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { humanize } from "@lib/utils/textConverter";
 import { marked } from "marked";
 import { AiOutlineArrowRight } from "react-icons/ai";

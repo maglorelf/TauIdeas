@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Play } from "react-feather";
 import YouTube from "react-youtube";
 

@@ -1,3 +1,4 @@
+import React from "react";
 import * as Icon from "react-feather";
 import { humanize } from "@lib/utils/textConverter";
 const CareerBenifits = ({ benifits: { title, description, benifit_list } }) => {

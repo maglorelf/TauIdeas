@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 const Accordion = ({ title, children, className }) => {
   const [show, setShow] = useState(false);
