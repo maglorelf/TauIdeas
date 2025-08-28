@@ -1,6 +1,7 @@
 ---
 import Base from "@layouts/Base.astro";
 import Blogs from "@components/Blogs.astro";
+import AffiliateBanner from "@components/AffiliateBanner.astro";
 
 import Banner from "@layouts/components/Banner.astro";
 import KeyFeatures from "@layouts/components/KeyFeatures.astro";
@@ -47,6 +48,16 @@ const projects = await getSinglePage("projects");
   projects={projects}
   categories={categories}
 />
+  
+  <!-- Affiliate Banner Section -->
+  <section class="section py-8">
+    <div class="container">
+      <div class="text-center">
+        <AffiliateBanner size="468x60" className="mx-auto" />
+      </div>
+    </div>
+  </section>
+
   <!-- banner -->
   <!-- <Banner banner={banner} /> -->
   <!-- key features -->

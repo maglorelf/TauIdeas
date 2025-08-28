@@ -1,6 +1,7 @@
 ---
 import Logo from "@components/Logo.astro";
 import Social from "@components/Social.astro";
+import AffiliateBanner from "@components/AffiliateBanner.astro";
 import config from "@config/config.json";
 import menu from "@config/menu.json";
 import social from "@config/social.json";
@@ -50,6 +51,13 @@ const { copyright, location, email, phone, footer_description } = config.params;
               >{phone}</a>
           </li>
         </ul> -->
+      </div>
+    </div>
+    
+    <!-- Affiliate Banner Section -->
+    <div class="row mt-8 mb-8">
+      <div class="col-12 text-center">
+        <AffiliateBanner size="728x90" className="mx-auto" />
       </div>
     </div>
   </div>

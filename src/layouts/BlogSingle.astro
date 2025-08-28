@@ -1,5 +1,6 @@
 ---
 import { Image } from "astro:assets";
+import AffiliateBanner from "@components/AffiliateBanner.astro";
 import dateFormat from "@lib/utils/dateFormat";
 import readingTime from "@lib/utils/readingTime";
 import Disqus from "./function-components/Disqus";
@@ -67,6 +68,12 @@ const { Content } = await post.render();
         <div class="content">
           <Content />
         </div>
+        
+        <!-- Affiliate Banner -->
+        <div class="mt-8 mb-6">
+          <AffiliateBanner size="300x250" className="mx-auto" />
+        </div>
+        
         <!-- <Disqus client:load /> -->
       </div>
     </div>

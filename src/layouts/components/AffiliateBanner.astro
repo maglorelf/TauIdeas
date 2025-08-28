@@ -1,0 +1,67 @@
+---
+// Affiliate Banner Component for SmarterASP.NET
+const bannerSize = Astro.props.size || "728x90"; // Default to leaderboard banner
+const className = Astro.props.className || "";
+
+const banners = {
+  "728x90": {
+    src: "https://www.SmarterASP.NET/affiliate/728X90.gif",
+    width: "728",
+    height: "90",
+    alt: "SmarterASP.NET - Professional Web Hosting"
+  },
+  "468x60": {
+    src: "https://www.SmarterASP.NET/affiliate/468x60.gif", 
+    width: "468",
+    height: "60",
+    alt: "SmarterASP.NET - Reliable Web Hosting"
+  },
+  "300x250": {
+    src: "https://www.SmarterASP.NET/affiliate/300x250.gif",
+    width: "300", 
+    height: "250",
+    alt: "SmarterASP.NET - Premium Hosting Solutions"
+  },
+  "234x60": {
+    src: "https://www.SmarterASP.NET/affiliate/234x60.gif",
+    width: "234",
+    height: "60", 
+    alt: "SmarterASP.NET - Web Hosting Services"
+  }
+};
+
+const banner = banners[bannerSize];
+---
+
+<div class={`affiliate-banner text-center ${className}`}>
+  <p class="text-sm text-gray-600 mb-2">Recommended Hosting Provider</p>
+  <a 
+    href="https://www.SmarterASP.NET/index?r=maglorelf"
+    target="_blank"
+    rel="noopener sponsored"
+    class="inline-block transition-transform hover:scale-105"
+  >
+    <img 
+      src={banner.src}
+      width={banner.width}
+      height={banner.height}
+      alt={banner.alt}
+      class="mx-auto border-0 rounded-lg shadow-sm"
+      loading="lazy"
+    />
+  </a>
+  <p class="text-xs text-gray-500 mt-1">Powering TauIdeas projects</p>
+</div>
+
+<style>
+  .affiliate-banner {
+    padding: 1rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+  }
+  
+  .affiliate-banner:hover {
+    background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+  }
+</style>
