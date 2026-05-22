@@ -5,9 +5,13 @@ import PageHeader from "@components/PageHeader.astro";
 import Shape from "@components/Shape.astro";
 import Base from "@layouts/Base.astro";
 import Cta from "@layouts/partials/Cta.astro";
-import { getEntryBySlug } from "astro:content";
+import { getCollection } from "astro:content";
 
-const project = await getEntryBySlug("projects", "onchess");
+const projects = await getCollection("projects");
+const project = projects.find((entry) => entry.id === "onchess");
+if (!project) {
+  throw new Error("Missing projects/onchess entry");
+}
 ---
 
 <Base

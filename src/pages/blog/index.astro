@@ -11,10 +11,14 @@ import Cta from "@layouts/partials/Cta.astro";
 import { getSinglePage } from "@lib/contentParser.astro";
 import { getTaxonomy } from "@lib/taxonomyParser.astro";
 import { sortByDate } from "@lib/utils/sortFunctions";
-import { getEntryBySlug } from "astro:content";
+import { getCollection } from "astro:content";
 
 const { blog_folder } = config.settings;
-const blogIndex = await getEntryBySlug<any, string>(blog_folder, "-index");
+const blogEntries = await getCollection(blog_folder as any);
+const blogIndex = blogEntries.find((entry) => entry.id === "-index");
+if (!blogIndex) {
+  throw new Error(`Missing -index entry in collection: ${blog_folder}`);
+}
 const posts = await getSinglePage(blog_folder);
 const categories = await getTaxonomy(config.settings.blog_folder, "categories");
 const sortedPosts = sortByDate(posts);

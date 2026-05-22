@@ -32,7 +32,7 @@ const { title, description, authors, categories, image, date, tags } =
               )
               .map((author, i) => (
                 <a
-                  href={`/authors/${slugify(author.slug)}`}
+                  href={`/authors/${slugify(author.id)}`}
                   class="flex items-center hover:text-primary"
                 >
                   {author.data.image && (
@@ -101,7 +101,7 @@ const { title, description, authors, categories, image, date, tags } =
           className="social-share mb-4"
           title={title}
           description={description}
-          slug={post.slug}
+          slug={post.id}
         />
       </div>
     </article>

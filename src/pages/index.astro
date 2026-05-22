@@ -8,7 +8,7 @@ import KeyFeatures from "@layouts/components/KeyFeatures.astro";
 import Testimonial from "@layouts/components/Testimonial.astro";
 import Service from "@layouts/components/Service.astro";
 import Cta from "@layouts/partials/Cta.astro";
-import { getEntryBySlug } from "astro:content";
+import { getEntry } from "astro:content";
 import config from "@config/config.json";
 import { getSinglePage } from "@lib/contentParser.astro";
 import { getTaxonomy } from "@lib/taxonomyParser.astro";
@@ -17,7 +17,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import ProjectExcept from "@layouts/function-components/ProjectExcept";
 
 
-const homepage = await getEntryBySlug("homepage", "index");
+const homepage = await getEntry("homepage", "index");
 const { banner, key_features, service, testimonial } = homepage.data;
 const { blog_folder } = config.settings;
 const posts = await getSinglePage(blog_folder);

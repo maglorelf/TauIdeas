@@ -1,6 +1,7 @@
 ---
+import { render } from "astro:content";
 const { data } = Astro.props;
-const { Content } = await data.render();
+const { Content } = await render(data);
 ---
 
 <section class="section">

@@ -7,10 +7,11 @@ import { getSinglePage } from "@lib/contentParser.astro";
 
 export async function getStaticPaths() {
   const pages = await getSinglePage("pages");
+  const regularPages = pages.filter((page) => page.id !== "404");
 
-  const paths = pages.map((page) => ({
+  const paths = regularPages.map((page) => ({
     params: {
-      regular: page.slug,
+      regular: page.id,
     },
     props: { page },
   }));

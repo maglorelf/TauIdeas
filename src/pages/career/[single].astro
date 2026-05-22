@@ -5,27 +5,27 @@ import Shape from "@components/Shape.astro";
 import Base from "@layouts/Base.astro";
 import { getSinglePage } from "@lib/contentParser.astro";
 import similerItems from "@lib/utils/similarItems";
-import { getEntryBySlug } from "astro:content";
+import { getEntry, render } from "astro:content";
 
-const careerIndex: any = await getEntryBySlug("careers", "-index");
+const careerIndex: any = await getEntry("careers", "-index");
 const careers = await getSinglePage("careers");
 export async function getStaticPaths() {
   const careers = await getSinglePage("careers");
   const paths = careers.map((post) => ({
     params: {
-      single: post.slug,
+      single: post.id,
     },
     props: { post },
   }));
   return paths;
 }
 const { post } = Astro.props;
-const { Content } = await post.render();
-const similarPosts = similerItems(post, careers, post.slug);
+const { Content } = await render(post);
+const similarPosts = similerItems(post, careers, post.id);
 const page_data = {
   index_title: careerIndex.data.title,
   page_title: post.data.title,
-  slug: post.slug,
+  slug: post.id,
 };
 ---
 

@@ -6,6 +6,7 @@ import readingTime from "@lib/utils/readingTime";
 import Disqus from "./function-components/Disqus";
 
 import { humanize, slugify } from "@lib/utils/textConverter";
+import { render } from "astro:content";
 import {
   FaRegCalendarAlt,
   FaRegClock,
@@ -14,7 +15,7 @@ import {
 } from "react-icons/fa";
 
 const { post } = Astro.props;
-const { Content } = await post.render();
+const { Content } = await render(post);
 ---
 
 <section class="section blog-single">

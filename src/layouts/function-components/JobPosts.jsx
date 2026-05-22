@@ -86,7 +86,7 @@ const JobPosts = ({ posts, categories, career: { title, subtitle } }) => {
                   <li className="my-1 mr-8">
                     <a
                       className="inline-flex items-center font-semibold text-primary"
-                      href={`/career/${post.slug}`}
+                      href={`/career/${post.id}`}
                     >
                       Read More
                       <AiOutlineArrowRight className="ml-1.5 text-xl font-bold" />

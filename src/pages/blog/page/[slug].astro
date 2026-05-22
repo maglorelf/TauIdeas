@@ -7,7 +7,7 @@ import Base from "@layouts/Base.astro";
 import Pagination from "@layouts/components/Pagination.astro";
 import { getSinglePage } from "@lib/contentParser.astro";
 import { sortByDate } from "@lib/utils/sortFunctions";
-import { getEntryBySlug } from "astro:content";
+import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
   const posts = await getSinglePage(config.settings.blog_folder);
@@ -23,10 +23,13 @@ export async function getStaticPaths() {
   }
   return paths;
 }
-const blogIndex = await getEntryBySlug<any, string>(
-  config.settings.blog_folder,
-  "-index"
-);
+const blogEntries = await getCollection(config.settings.blog_folder as any);
+const blogIndex = blogEntries.find((entry) => entry.id === "-index");
+if (!blogIndex) {
+  throw new Error(
+    `Missing -index entry in collection: ${config.settings.blog_folder}`
+  );
+}
 const { slug } = Astro.params;
 const posts = await getSinglePage(config.settings.blog_folder);
 const sortedPosts = sortByDate(posts);

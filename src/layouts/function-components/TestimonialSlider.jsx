@@ -1,12 +1,11 @@
 import React, { useRef, useState } from "react";
 import { Star } from "react-feather";
-import SwiperCore, { Autoplay, Pagination } from "swiper";
+import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const TestimonialSlider = ({ list }) => {
-  SwiperCore.use([Pagination]);
   const [swiper, setSwiper] = useState(null);
   const paginationRef = useRef(null);
 
