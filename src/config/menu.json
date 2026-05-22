@@ -53,12 +53,20 @@
           "url": "/projects/tauideas"
         },
         {
+          "name": "Escaques",
+          "url": "/projects/escaques"
+        },
+        {
           "name": "On Chess",
           "url": "/projects/onchess"
         },
         {
           "name": "Giftsteer",
           "url": "/projects/giftsteer"
+        },
+        {
+          "name": "TauGambit",
+          "url": "/projects/gambit"
         }
       ]
     }   

@@ -1,10 +1,6 @@
 ---
-import FeatureBanner from "@components/features/FeatureBanner.astro";
-import ProjecManagement from "@components/features/ProjecManagement.astro";
 import PageHeader from "@components/PageHeader.astro";
-import Shape from "@components/Shape.astro";
 import Base from "@layouts/Base.astro";
-import Cta from "@layouts/partials/Cta.astro";
 import { getCollection } from "astro:content";
 
 const projects = await getCollection("projects");
@@ -12,6 +8,57 @@ const project = projects.find((entry) => entry.id === "escaques");
 if (!project) {
   throw new Error("Missing projects/escaques entry");
 }
+
+const projectHighlights = [
+  {
+    title: "Real teachers, real classes",
+    description:
+      "The platform focuses on live instruction with real coaches adapted to each skill level.",
+  },
+  {
+    title: "At-home chess academy",
+    description:
+      "Learners can improve from home while keeping the feeling of a real classroom environment.",
+  },
+  {
+    title: "Structured offer",
+    description:
+      "Group classes, individual classes, and transparent pricing create a clear enrollment path.",
+  },
+];
+
+const capabilityCards = [
+  {
+    title: "Group classes",
+    details:
+      "Collaborative lessons for students who want structured learning with peers.",
+  },
+  {
+    title: "Individual coaching",
+    details:
+      "One-to-one sessions for players who need a personalized growth plan.",
+  },
+  {
+    title: "Spanish-first communication",
+    details:
+      "Localized messaging and pages for a clear, native-language experience.",
+  },
+  {
+    title: "Simple conversion funnel",
+    details:
+      "Visitors can move from landing page to class type and pricing with low friction.",
+  },
+  {
+    title: "Trust-centered proposition",
+    details:
+      "Prominence on qualified teachers and student fit reinforces credibility.",
+  },
+  {
+    title: "Contact-driven onboarding",
+    details:
+      "Direct contact options support a consultative enrollment process.",
+  },
+];
 ---
 
 <Base
@@ -20,15 +67,194 @@ if (!project) {
   description={project.data.description}
   image={project.data.image}
 >
-<section class="page-hero pt-16">
-  <div class="container">    
-    <PageHeader page_data={project.data} />
-  </div>
-</section>
-  <!-- <Shape /> -->
-  <!-- <FeatureBanner features={project.data} /> -->
-  <!-- <ProjecManagement features={project.data} /> -->
-  <!-- <Cta />  -->
-  <div style="   min-height:200px;">&nbsp;</div>
+  <section class="page-hero pt-16">
+    <div class="container">
+      <PageHeader page_data={project.data} />
+
+      <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <a
+          href="https://escaques.org"
+          target="_blank"
+          rel="noreferrer"
+          class="btn btn-primary text-center"
+        >
+          Visit Escaques
+        </a>
+        <a
+          href="https://escaques.org/curso-grupal"
+          target="_blank"
+          rel="noreferrer"
+          class="btn btn-outline-primary text-center"
+        >
+          Group Classes
+        </a>
+        <a
+          href="https://escaques.org/curso-individual"
+          target="_blank"
+          rel="noreferrer"
+          class="btn btn-outline-primary text-center"
+        >
+          Individual Classes
+        </a>
+        <a
+          href="https://escaques.org/pricing"
+          target="_blank"
+          rel="noreferrer"
+          class="btn btn-outline-primary text-center"
+        >
+          Pricing
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pt-8">
+    <div class="container">
+      <div class="rounded-2xl bg-theme-light p-8 lg:p-12">
+        <div class="grid gap-8 lg:grid-cols-12">
+          <div class="lg:col-span-7">
+            <h2 class="mb-4">Project Snapshot</h2>
+            <p>
+              Escaques is an online chess academy designed for students who want
+              the discipline of real classes with the flexibility of learning
+              from home. Its value proposition is direct: practical coaching,
+              human teachers, and clear study options.
+            </p>
+            <p class="mt-4">
+              The product direction is service-oriented and conversion-focused,
+              helping visitors quickly choose between group and individual paths.
+            </p>
+          </div>
+          <div class="lg:col-span-5">
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
+              <div class="rounded-xl border border-border bg-white p-5">
+                <p class="mb-1 text-sm uppercase tracking-wide text-primary">
+                  Domain
+                </p>
+                <p class="mb-0 font-semibold text-dark">Chess Education</p>
+              </div>
+              <div class="rounded-xl border border-border bg-white p-5">
+                <p class="mb-1 text-sm uppercase tracking-wide text-primary">
+                  Audience
+                </p>
+                <p class="mb-0 font-semibold text-dark">
+                  Spanish-speaking learners
+                </p>
+              </div>
+              <div class="rounded-xl border border-border bg-white p-5">
+                <p class="mb-1 text-sm uppercase tracking-wide text-primary">
+                  Offering Model
+                </p>
+                <p class="mb-0 font-semibold text-dark">
+                  Live classes + coaching
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pt-4">
+    <div class="container">
+      <div class="mb-10 max-w-2xl">
+        <h2>Why This Project Works</h2>
+        <p>
+          Escaques keeps the message clean and specific: quality teaching,
+          progress from home, and study formats adapted to each learner.
+        </p>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-3">
+        {projectHighlights.map((item) => (
+          <article class="rounded-xl border border-border p-6 shadow-sm">
+            <h3 class="mb-3 h5">{item.title}</h3>
+            <p class="mb-0">{item.description}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section pt-4">
+    <div class="container">
+      <div class="mb-10 max-w-3xl">
+        <h2>Core Capabilities</h2>
+        <p>
+          The platform already contains the right fundamentals for service-led
+          education growth in chess.
+        </p>
+      </div>
+
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {capabilityCards.map((card) => (
+          <article class="rounded-xl bg-white p-6 shadow-[0_8px_28px_rgba(0,0,0,0.07)]">
+            <h3 class="mb-3 h5">{card.title}</h3>
+            <p class="mb-0">{card.details}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section pt-4">
+    <div class="container">
+      <div class="grid gap-8 lg:grid-cols-2">
+        <div class="rounded-2xl border border-border p-8">
+          <h2 class="mb-4">User Journey</h2>
+          <ol class="mb-0 list-decimal space-y-3 pl-5 text-text">
+            <li>Discover academy proposition on the homepage.</li>
+            <li>Evaluate class type: group or individual.</li>
+            <li>Review pricing and practical details.</li>
+            <li>Reach out and start training with a real coach.</li>
+            <li>Continue with ongoing sessions from home.</li>
+          </ol>
+        </div>
+
+        <div class="rounded-2xl border border-border p-8">
+          <h2 class="mb-4">Growth Opportunities</h2>
+          <ul class="mb-0 list-disc space-y-3 pl-5 text-text">
+            <li>Add richer coach profiles and student testimonials.</li>
+            <li>Introduce progression tracks by rating and goals.</li>
+            <li>Integrate scheduling and booking automation.</li>
+            <li>Publish structured sample lessons and trial modules.</li>
+            <li>Expand social proof with student improvement stories.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pt-4">
+    <div class="container">
+      <div class="rounded-2xl bg-dark px-8 py-12 text-white lg:px-12">
+        <p class="mb-3 text-sm uppercase tracking-[0.2em] text-white/75">
+          Project Summary
+        </p>
+        <h2 class="mb-4 text-white">Escaques brings real coaching online</h2>
+        <p class="mb-8 text-white/80">
+          A focused chess academy product that transforms in-person teaching
+          quality into accessible online learning for committed students.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a
+            href="https://escaques.org"
+            target="_blank"
+            rel="noreferrer"
+            class="btn btn-primary"
+          >
+            Open Escaques
+          </a>
+          <a
+            href="/projects"
+            class="btn border border-white/30 bg-transparent text-white hover:border-white hover:text-white"
+          >
+            Back to Projects
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </Base>

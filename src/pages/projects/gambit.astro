@@ -4,59 +4,59 @@ import Base from "@layouts/Base.astro";
 import { getCollection } from "astro:content";
 
 const projects = await getCollection("projects");
-const project = projects.find((entry) => entry.id === "giftsteer");
+const project = projects.find((entry) => entry.id === "gambit");
 if (!project) {
-  throw new Error("Missing projects/giftsteer entry");
+  throw new Error("Missing projects/gambit entry");
 }
 
 const projectHighlights = [
   {
-    title: "Simple gift workflow",
+    title: "Opening-first training",
     description:
-      "The product is centered around an intuitive three-step journey: create list, share, and avoid duplicates.",
+      "Users can import PGNs and memorize full opening lines with interactive board feedback.",
   },
   {
-    title: "Secret Santa model",
+    title: "Practical tactical work",
     description:
-      "The service layer includes event, guest, list, and pair generation logic for gift exchange scenarios.",
+      "Exercises include tactical and positional practice with session-level error awareness.",
   },
   {
-    title: "Multilingual orientation",
+    title: "Classroom-ready model",
     description:
-      "English and Spanish surfaces make the app accessible for bilingual communities and families.",
+      "Virtual classroom workflows support coaches and student groups with shared learning plans.",
   },
 ];
 
 const capabilityCards = [
   {
-    title: "Wishlists",
+    title: "PGN repertoire import",
     details:
-      "Users can create and manage gift lists with optional URLs for faster shopping references.",
+      "Players can bring their existing repertoire and transform it into guided memorization routines.",
   },
   {
-    title: "Sharing",
+    title: "Spaced repetition",
     details:
-      "List and event flows are designed for collaboration among family, friends, and groups.",
+      "Repetition patterns help long-term retention of opening branches and critical ideas.",
   },
   {
-    title: "Secret Santa events",
+    title: "Mistake detection",
     details:
-      "The domain model supports events, guest handling, and assignment mechanics.",
+      "Interactive board logic flags wrong moves in real time to accelerate correction loops.",
   },
   {
-    title: "Authentication",
+    title: "Tactical modules",
     details:
-      "Login and account routes support private user spaces and personalized list access.",
+      "Session-based puzzle and positional exercises keep training practical and measurable.",
   },
   {
-    title: "Legacy web architecture",
+    title: "Virtual classrooms",
     details:
-      "Built on ASP.NET MVC style layers with separated models, services, and repositories.",
+      "Study groups and coach-led lessons bring collaborative structure to online chess prep.",
   },
   {
-    title: "Open-source distribution",
+    title: "Open beta release",
     details:
-      "Public GitHub repository and MIT license make collaboration and reuse straightforward.",
+      "The product is in beta, allowing rapid experimentation while core workflows mature.",
   },
 ];
 ---
@@ -73,36 +73,36 @@ const capabilityCards = [
 
       <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <a
-          href="http://giftsteer.tauideas.tech"
+          href="https://gambit.tauideas.com"
           target="_blank"
           rel="noreferrer"
           class="btn btn-primary text-center"
         >
-          Visit Giftsteer
+          Visit TauGambit
         </a>
         <a
-          href="https://github.com/maglorelf/giftsteer"
+          href="https://gambit.tauideas.com/register"
           target="_blank"
           rel="noreferrer"
           class="btn btn-outline-primary text-center"
         >
-          Source Repository
+          Create Account
         </a>
         <a
-          href="http://giftsteer.tauideas.tech/en/Home/Features"
-          target="_blank"
-          rel="noreferrer"
-          class="btn btn-outline-primary text-center"
-        >
-          Product Features
-        </a>
-        <a
-          href="http://giftsteer.tauideas.tech/en/Account/Login"
+          href="https://gambit.tauideas.com/login"
           target="_blank"
           rel="noreferrer"
           class="btn btn-outline-primary text-center"
         >
           Sign In
+        </a>
+        <a
+          href="https://gambit.tauideas.com/about"
+          target="_blank"
+          rel="noreferrer"
+          class="btn btn-outline-primary text-center"
+        >
+          About Project
         </a>
       </div>
     </div>
@@ -115,14 +115,14 @@ const capabilityCards = [
           <div class="lg:col-span-7">
             <h2 class="mb-4">Project Snapshot</h2>
             <p>
-              Giftsteer is a social gifting application for wishlists and Secret
-              Santa dynamics. Its product promise is practical and emotional at
-              the same time: reduce gift stress while keeping the experience fun.
+              TauGambit is a chess training product built around opening
+              memorization and tactical consistency. It blends repertoire study,
+              interactive correction loops, and classroom scenarios for coached
+              or self-directed progression.
             </p>
             <p class="mt-4">
-              The platform combines list creation, sharing behavior, and event
-              mechanics that help groups coordinate gifts without unpleasant
-              surprises.
+              The current release is beta and clearly communicates that product
+              data can change while the platform evolves.
             </p>
           </div>
           <div class="lg:col-span-5">
@@ -131,23 +131,21 @@ const capabilityCards = [
                 <p class="mb-1 text-sm uppercase tracking-wide text-primary">
                   Domain
                 </p>
-                <p class="mb-0 font-semibold text-dark">Social gifting</p>
+                <p class="mb-0 font-semibold text-dark">Chess training SaaS</p>
               </div>
               <div class="rounded-xl border border-border bg-white p-5">
                 <p class="mb-1 text-sm uppercase tracking-wide text-primary">
                   Audience
                 </p>
                 <p class="mb-0 font-semibold text-dark">
-                  Families, friends, communities
+                  Learners, coaches, study groups
                 </p>
               </div>
               <div class="rounded-xl border border-border bg-white p-5">
                 <p class="mb-1 text-sm uppercase tracking-wide text-primary">
-                  Platform Type
+                  Release Stage
                 </p>
-                <p class="mb-0 font-semibold text-dark">
-                  Wishlist + event workflow
-                </p>
+                <p class="mb-0 font-semibold text-dark">Public beta</p>
               </div>
             </div>
           </div>
@@ -161,8 +159,9 @@ const capabilityCards = [
       <div class="mb-10 max-w-2xl">
         <h2>Why This Project Works</h2>
         <p>
-          Giftsteer takes a recurring real-life problem and solves it with a
-          lightweight, understandable interaction model.
+          TauGambit targets one of the hardest parts of chess improvement:
+          retaining prepared lines while converting them into practical board
+          performance.
         </p>
       </div>
 
@@ -182,8 +181,8 @@ const capabilityCards = [
       <div class="mb-10 max-w-3xl">
         <h2>Core Capabilities</h2>
         <p>
-          The existing product and repository show a complete end-to-end concept
-          from user UI flows to backend domain services.
+          The live beta already exposes a clear educational engine with room for
+          rapid iteration.
         </p>
       </div>
 
@@ -204,22 +203,22 @@ const capabilityCards = [
         <div class="rounded-2xl border border-border p-8">
           <h2 class="mb-4">User Journey</h2>
           <ol class="mb-0 list-decimal space-y-3 pl-5 text-text">
-            <li>Create a personal gift list.</li>
-            <li>Share the list with friends and family.</li>
-            <li>Track gifts and avoid duplicate purchases.</li>
-            <li>Run Secret Santa style events.</li>
-            <li>Manage outcomes with less stress and more clarity.</li>
+            <li>Create account and define chess training goals.</li>
+            <li>Import opening PGNs and start interactive rehearsal.</li>
+            <li>Run tactical sessions and track recurring mistakes.</li>
+            <li>Join or create virtual classroom study groups.</li>
+            <li>Iterate training using repetition and coach feedback.</li>
           </ol>
         </div>
 
         <div class="rounded-2xl border border-border p-8">
           <h2 class="mb-4">Growth Opportunities</h2>
           <ul class="mb-0 list-disc space-y-3 pl-5 text-text">
-            <li>Modernize UI while preserving proven flow structure.</li>
-            <li>Add mobile-first interaction and notifications.</li>
-            <li>Expand event templates beyond Secret Santa.</li>
-            <li>Introduce recommendation and budgeting helpers.</li>
-            <li>Improve analytics for list conversion and engagement.</li>
+            <li>Add progress dashboards by opening family and tactic themes.</li>
+            <li>Introduce coach analytics for student-level weaknesses.</li>
+            <li>Expand onboarding templates by rating range.</li>
+            <li>Add spaced-review reminders and calendar workflows.</li>
+            <li>Harden beta UX for long-term production readiness.</li>
           </ul>
         </div>
       </div>
@@ -232,19 +231,20 @@ const capabilityCards = [
         <p class="mb-3 text-sm uppercase tracking-[0.2em] text-white/75">
           Project Summary
         </p>
-        <h2 class="mb-4 text-white">Giftsteer simplifies social gifting</h2>
+        <h2 class="mb-4 text-white">TauGambit trains opening precision</h2>
         <p class="mb-8 text-white/80">
-          A practical product for organizing gift intentions and Secret Santa
-          dynamics, backed by a complete open-source codebase.
+          A beta chess-learning product focused on repertoire retention,
+          tactical rigor, and collaborative training between players and
+          coaches.
         </p>
         <div class="flex flex-wrap gap-4">
           <a
-            href="http://giftsteer.tauideas.tech"
+            href="https://gambit.tauideas.com"
             target="_blank"
             rel="noreferrer"
             class="btn btn-primary"
           >
-            Open Giftsteer
+            Open TauGambit
           </a>
           <a
             href="/projects"
@@ -256,5 +256,4 @@ const capabilityCards = [
       </div>
     </div>
   </section>
-
 </Base>
