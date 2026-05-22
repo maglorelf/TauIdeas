@@ -1,10 +1,6 @@
 ---
-import FeatureBanner from "@components/features/FeatureBanner.astro";
-import ProjecManagement from "@components/features/ProjecManagement.astro";
 import PageHeader from "@components/PageHeader.astro";
-import Shape from "@components/Shape.astro";
 import Base from "@layouts/Base.astro";
-import Cta from "@layouts/partials/Cta.astro";
 import { getCollection } from "astro:content";
 
 const projects = await getCollection("projects");
@@ -12,6 +8,57 @@ const project = projects.find((entry) => entry.id === "onchess");
 if (!project) {
   throw new Error("Missing projects/onchess entry");
 }
+
+const projectHighlights = [
+  {
+    title: "Knowledge Hub + Community",
+    description:
+      "Combines articles, strategy content, and community-oriented messaging for players at different levels.",
+  },
+  {
+    title: "Premium Resources Flow",
+    description:
+      "Includes gated educational resources with filters by category, type, and tags to support a structured learning path.",
+  },
+  {
+    title: "Credible Personal Brand",
+    description:
+      "Connects teaching background, tournament experience, and online profiles to create trust and authority.",
+  },
+];
+
+const capabilityCards = [
+  {
+    title: "Editorial blog",
+    details:
+      "Publishes strategy, training, and chess stories with date-based entries and clear read paths.",
+  },
+  {
+    title: "Resource catalog",
+    details:
+      "Supports multiple content formats like text, puzzle, PGN, PDF, and video-oriented materials.",
+  },
+  {
+    title: "Authentication",
+    details:
+      "Provides account creation and sign-in flows to unlock full educational content.",
+  },
+  {
+    title: "Multilingual surface",
+    details:
+      "Mixes English and Spanish/Galician content to match the target audience in local chess communities.",
+  },
+  {
+    title: "Authority pages",
+    details:
+      "Includes mission, OTB tournament results, and external profile links for stronger credibility.",
+  },
+  {
+    title: "Conversion CTAs",
+    details:
+      "Uses direct calls-to-action for blog exploration, learning signup, and resource access.",
+  },
+];
 ---
 
 <Base
@@ -20,15 +67,198 @@ if (!project) {
   description={project.data.description}
   image={project.data.image}
 >
-<section class="page-hero pt-16">
-  <div class="container">    
-    <PageHeader page_data={project.data} />
-  </div>
-</section>
-  <!-- <Shape /> -->
-  <!-- <FeatureBanner features={project.data} /> -->
-  <!-- <ProjecManagement features={project.data} /> -->
-  <!-- <Cta />  -->
-  <div style="   min-height:200px;">&nbsp;</div>
+  <section class="page-hero pt-16">
+    <div class="container">
+      <PageHeader page_data={project.data} />
+
+      <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <a
+          href="https://onchess.tauideas.tech"
+          target="_blank"
+          rel="noreferrer"
+          class="btn btn-primary text-center"
+        >
+          Visit Live Site
+        </a>
+        <a
+          href="https://onchess.tauideas.tech/blog"
+          target="_blank"
+          rel="noreferrer"
+          class="btn btn-outline-primary text-center"
+        >
+          Explore Blog
+        </a>
+        <a
+          href="https://onchess.tauideas.tech/resources"
+          target="_blank"
+          rel="noreferrer"
+          class="btn btn-outline-primary text-center"
+        >
+          View Resources
+        </a>
+        <a
+          href="https://github.com/maglorelf/OnChess"
+          target="_blank"
+          rel="noreferrer"
+          class="btn btn-outline-primary text-center"
+        >
+          Source Repository
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pt-8">
+    <div class="container">
+      <div class="rounded-2xl bg-theme-light p-8 lg:p-12">
+        <div class="grid gap-8 lg:grid-cols-12">
+          <div class="lg:col-span-7">
+            <h2 class="mb-4">Project Snapshot</h2>
+            <p>
+              OnChess is a niche chess platform focused on practical improvement,
+              educational resources, and community context. The product combines
+              editorial content, gated learning materials, and a personal
+              credibility layer based on real tournament and teaching activity.
+            </p>
+            <p class="mt-4">
+              The result is a focused ecosystem where visitors can discover
+              strategy content, follow training updates, and progress into
+              account-based resource consumption.
+            </p>
+          </div>
+          <div class="lg:col-span-5">
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
+              <div class="rounded-xl border border-border bg-white p-5">
+                <p class="mb-1 text-sm uppercase tracking-wide text-primary">
+                  Domain
+                </p>
+                <p class="mb-0 font-semibold text-dark">Chess Education</p>
+              </div>
+              <div class="rounded-xl border border-border bg-white p-5">
+                <p class="mb-1 text-sm uppercase tracking-wide text-primary">
+                  Audience
+                </p>
+                <p class="mb-0 font-semibold text-dark">
+                  Beginners to club-level players
+                </p>
+              </div>
+              <div class="rounded-xl border border-border bg-white p-5">
+                <p class="mb-1 text-sm uppercase tracking-wide text-primary">
+                  Product Direction
+                </p>
+                <p class="mb-0 font-semibold text-dark">
+                  Content + gated learning
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pt-4">
+    <div class="container">
+      <div class="mb-10 max-w-2xl">
+        <h2>Why This Project Works</h2>
+        <p>
+          The live product already shows a clear value loop: attract with public
+          chess content, build trust through real-world experience, and convert
+          into registered learners for deeper resources.
+        </p>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-3">
+        {projectHighlights.map((item) => (
+          <article class="rounded-xl border border-border p-6 shadow-sm">
+            <h3 class="mb-3 h5">{item.title}</h3>
+            <p class="mb-0">{item.description}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section pt-4">
+    <div class="container">
+      <div class="mb-10 max-w-3xl">
+        <h2>Core Capabilities</h2>
+        <p>
+          OnChess includes the main building blocks needed for an educational
+          digital product that can grow from a personal project into a structured
+          learning platform.
+        </p>
+      </div>
+
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {capabilityCards.map((card) => (
+          <article class="rounded-xl bg-white p-6 shadow-[0_8px_28px_rgba(0,0,0,0.07)]">
+            <h3 class="mb-3 h5">{card.title}</h3>
+            <p class="mb-0">{card.details}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section pt-4">
+    <div class="container">
+      <div class="grid gap-8 lg:grid-cols-2">
+        <div class="rounded-2xl border border-border p-8">
+          <h2 class="mb-4">User Journey</h2>
+          <ol class="mb-0 list-decimal space-y-3 pl-5 text-text">
+            <li>Land on home and discover chess-focused value proposition.</li>
+            <li>Browse latest posts to evaluate content quality and relevance.</li>
+            <li>Navigate to resources and encounter gated premium materials.</li>
+            <li>Create account or sign in to unlock full training assets.</li>
+            <li>Return for ongoing study through categorized resources.</li>
+          </ol>
+        </div>
+
+        <div class="rounded-2xl border border-border p-8">
+          <h2 class="mb-4">Growth Opportunities</h2>
+          <ul class="mb-0 list-disc space-y-3 pl-5 text-text">
+            <li>Introduce learner dashboards for progress and streak tracking.</li>
+            <li>Expand structured courses from beginner to competitive paths.</li>
+            <li>Add richer language switching for fully localized UX.</li>
+            <li>Publish curated study plans tied to resource filters.</li>
+            <li>Surface social proof from classes and tournament milestones.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pt-4">
+    <div class="container">
+      <div class="rounded-2xl bg-dark px-8 py-12 text-white lg:px-12">
+        <p class="mb-3 text-sm uppercase tracking-[0.2em] text-white/75">
+          Project Summary
+        </p>
+        <h2 class="mb-4 text-white">OnChess turns expertise into product</h2>
+        <p class="mb-8 text-white/80">
+          This project demonstrates how domain expertise can be translated into a
+          scalable web product: public content for reach, authenticated resources
+          for depth, and real-world chess credibility as differentiation.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a
+            href="https://onchess.tauideas.tech"
+            target="_blank"
+            rel="noreferrer"
+            class="btn btn-primary"
+          >
+            Open OnChess
+          </a>
+          <a
+            href="/projects"
+            class="btn border border-white/30 bg-transparent text-white hover:border-white hover:text-white"
+          >
+            Back to Projects
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </Base>
