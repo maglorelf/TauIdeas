@@ -5,7 +5,7 @@
  */
 import express from "express";
 import { fileURLToPath } from "url";
-import { dirname, join } from "path";
+import { dirname, extname, join } from "path";
 import { existsSync, statSync } from "fs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -21,6 +21,14 @@ app.use(
     etag: true,
   })
 );
+
+// Never rewrite file-like requests to HTML (e.g. /images/logo.png).
+app.use((req, res, next) => {
+  if (extname(req.path)) {
+    return res.status(404).end();
+  }
+  next();
+});
 
 // For every other request try:
 //  1. /path/index.html  (Astro writes one per route)
