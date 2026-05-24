@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "author": "maglor_elf",
   "license": "MIT",
-  "packageManager": "yarn@1.22.19",
   "engines": {
     "node": ">=22.12.0"
   },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "start": "node server.js",
     "json": "node scripts/jsonGenerator.js",
     "format": "prettier -w ."
   },
@@ -30,6 +30,7 @@
     "react-youtube": "^10.1.0",
     "remark-collapse": "^0.1.2",
     "remark-toc": "^8.0.1",
+    "express": "^4.21.0",
     "shufflejs": "^6.1.0",
     "swiper": "^12.1.4"
   },
