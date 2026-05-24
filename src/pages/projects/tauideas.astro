@@ -1,10 +1,6 @@
 ---
-import FeatureBanner from "@components/features/FeatureBanner.astro";
-import ProjecManagement from "@components/features/ProjecManagement.astro";
 import PageHeader from "@components/PageHeader.astro";
-import Shape from "@components/Shape.astro";
 import Base from "@layouts/Base.astro";
-import Cta from "@layouts/partials/Cta.astro";
 import { getCollection } from "astro:content";
 
 const projects = await getCollection("projects");
@@ -12,6 +8,57 @@ const project = projects.find((entry) => entry.id === "tauideas");
 if (!project) {
   throw new Error("Missing projects/tauideas entry");
 }
+
+const projectHighlights = [
+  {
+    title: "Flagship portfolio hub",
+    description:
+      "Tauideas centralizes personal products, technical writing, and project showcases in a single brand space.",
+  },
+  {
+    title: "Chess + software identity",
+    description:
+      "The narrative connects decades of chess experience with software engineering values like strategy and problem-solving.",
+  },
+  {
+    title: "Growth-ready content engine",
+    description:
+      "Blog posts, categories, and project directories create a scalable structure for long-term publishing.",
+  },
+];
+
+const capabilityCards = [
+  {
+    title: "Project showcase",
+    details:
+      "Includes linked case pages for products like OnChess, Giftsteer, Escaques, and TauGambit.",
+  },
+  {
+    title: "Technical blog",
+    details:
+      "Publishes migration notes, hosting reviews, and practical development updates.",
+  },
+  {
+    title: "Personal positioning",
+    details:
+      "About page strengthens trust through founder story, domains of expertise, and contact path.",
+  },
+  {
+    title: "Category taxonomy",
+    details:
+      "Organizes content into topics like development, hosting, and review to improve discovery.",
+  },
+  {
+    title: "Social distribution",
+    details:
+      "Connects with external channels like GitHub, LinkedIn, X/Twitter, and Facebook.",
+  },
+  {
+    title: "Monetization touchpoint",
+    details:
+      "Incorporates hosting partner placement without disrupting core portfolio readability.",
+  },
+];
 ---
 
 <Base
@@ -23,8 +70,193 @@ if (!project) {
   <section class="page-hero pt-16">
     <div class="container">
       <PageHeader page_data={project.data} />
+
+      <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <a
+          href="https://tauideas.tech"
+          target="_blank"
+          rel="noreferrer"
+          class="btn btn-primary text-center"
+        >
+          Visit Tauideas
+        </a>
+        <a
+          href="https://tauideas.tech/about"
+          target="_blank"
+          rel="noreferrer"
+          class="btn btn-outline-primary text-center"
+        >
+          About Tauideas
+        </a>
+        <a
+          href="https://tauideas.tech/blog"
+          target="_blank"
+          rel="noreferrer"
+          class="btn btn-outline-primary text-center"
+        >
+          Read Blog
+        </a>
+        <a
+          href="https://github.com/maglorelf"
+          target="_blank"
+          rel="noreferrer"
+          class="btn btn-outline-primary text-center"
+        >
+          GitHub Profile
+        </a>
+      </div>
     </div>
-  </section> 
-  <!-- <ProjecManagement features={project.data} /> -->
-  <div style="   min-height:200px;">&nbsp;</div>
+  </section>
+
+  <section class="section pt-8">
+    <div class="container">
+      <div class="rounded-2xl bg-theme-light p-8 lg:p-12">
+        <div class="grid gap-8 lg:grid-cols-12">
+          <div class="lg:col-span-7">
+            <h2 class="mb-4">Project Snapshot</h2>
+            <p>
+              Tauideas is the main digital hub for Marcos Javier Martinez Ramos,
+              combining software experimentation, product building, and
+              editorial publishing. It functions as both portfolio and launch
+              platform for projects with practical use cases.
+            </p>
+            <p class="mt-4">
+              The core narrative is distinctive: chess and software share the
+              same foundation of strategy, logic, and creative
+              problem-solving. This gives Tauideas a coherent identity across
+              products and content.
+            </p>
+          </div>
+          <div class="lg:col-span-5">
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
+              <div class="rounded-xl border border-border bg-white p-5">
+                <p class="mb-1 text-sm uppercase tracking-wide text-primary">
+                  Domain
+                </p>
+                <p class="mb-0 font-semibold text-dark">Personal tech brand</p>
+              </div>
+              <div class="rounded-xl border border-border bg-white p-5">
+                <p class="mb-1 text-sm uppercase tracking-wide text-primary">
+                  Core Audience
+                </p>
+                <p class="mb-0 font-semibold text-dark">
+                  Builders, learners, chess-tech community
+                </p>
+              </div>
+              <div class="rounded-xl border border-border bg-white p-5">
+                <p class="mb-1 text-sm uppercase tracking-wide text-primary">
+                  Primary Function
+                </p>
+                <p class="mb-0 font-semibold text-dark">
+                  Portfolio + publishing + project gateway
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pt-4">
+    <div class="container">
+      <div class="mb-10 max-w-2xl">
+        <h2>Why This Project Works</h2>
+        <p>
+          Tauideas is clear about ownership, point of view, and product
+          direction. That clarity turns a personal site into a credible
+          long-term project ecosystem.
+        </p>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-3">
+        {projectHighlights.map((item) => (
+          <article class="rounded-xl border border-border p-6 shadow-sm">
+            <h3 class="mb-3 h5">{item.title}</h3>
+            <p class="mb-0">{item.description}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section pt-4">
+    <div class="container">
+      <div class="mb-10 max-w-3xl">
+        <h2>Core Capabilities</h2>
+        <p>
+          The site architecture already supports continuous growth as both a
+          publishing channel and a product discovery surface.
+        </p>
+      </div>
+
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {capabilityCards.map((card) => (
+          <article class="rounded-xl bg-white p-6 shadow-[0_8px_28px_rgba(0,0,0,0.07)]">
+            <h3 class="mb-3 h5">{card.title}</h3>
+            <p class="mb-0">{card.details}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section pt-4">
+    <div class="container">
+      <div class="grid gap-8 lg:grid-cols-2">
+        <div class="rounded-2xl border border-border p-8">
+          <h2 class="mb-4">User Journey</h2>
+          <ol class="mb-0 list-decimal space-y-3 pl-5 text-text">
+            <li>Land on homepage and discover latest updates.</li>
+            <li>Explore blog posts by topic and practical interest.</li>
+            <li>Browse project portfolio by category.</li>
+            <li>Open individual product pages for deeper context.</li>
+            <li>Connect through social or email for collaboration.</li>
+          </ol>
+        </div>
+
+        <div class="rounded-2xl border border-border p-8">
+          <h2 class="mb-4">Growth Opportunities</h2>
+          <ul class="mb-0 list-disc space-y-3 pl-5 text-text">
+            <li>Expand with project timelines and changelogs.</li>
+            <li>Add richer case studies with metrics and outcomes.</li>
+            <li>Integrate newsletter capture for return audience growth.</li>
+            <li>Highlight collaboration services and engagement models.</li>
+            <li>Publish deeper technical architecture breakdowns.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pt-4">
+    <div class="container">
+      <div class="rounded-2xl bg-dark px-8 py-12 text-white lg:px-12">
+        <p class="mb-3 text-sm uppercase tracking-[0.2em] text-white/75">
+          Project Summary
+        </p>
+        <h2 class="mb-4 text-white">Tauideas is the ecosystem foundation</h2>
+        <p class="mb-8 text-white/80">
+          More than a personal portfolio, Tauideas is the strategic base where
+          product experiments, technical content, and brand identity converge.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a
+            href="https://tauideas.tech"
+            target="_blank"
+            rel="noreferrer"
+            class="btn btn-primary"
+          >
+            Open Tauideas
+          </a>
+          <a
+            href="/projects"
+            class="btn border border-white/30 bg-transparent text-white hover:border-white hover:text-white"
+          >
+            Back to Projects
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 </Base>
