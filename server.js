@@ -24,7 +24,12 @@ app.use(
 
 // Never rewrite file-like requests to HTML (e.g. /images/logo.png).
 app.use((req, res, next) => {
-  if (extname(req.path)) {
+  const normalizedPath = req.path.replace(/\/+$/, "");
+  if (extname(normalizedPath)) {
+    if (req.path !== normalizedPath) {
+      const query = req.url.includes("?") ? req.url.slice(req.url.indexOf("?")) : "";
+      return res.redirect(301, `${normalizedPath}${query}`);
+    }
     return res.status(404).end();
   }
   next();
@@ -37,7 +42,6 @@ app.use((req, res) => {
   const candidates = [
     join(distDir, req.path, "index.html"),
     join(distDir, req.path.replace(/\/$/, "") + ".html"),
-    join(distDir, "404.html"),
   ];
 
   for (const candidate of candidates) {
