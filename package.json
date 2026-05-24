@@ -4,6 +4,9 @@
   "author": "maglor_elf",
   "license": "MIT",
   "packageManager": "yarn@1.22.19",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
